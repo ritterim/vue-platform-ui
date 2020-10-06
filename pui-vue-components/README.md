@@ -1,4 +1,6 @@
-# pui-vue-components
+# vue-platfor-ui
+vueJS port of Platform UI
+
 
 ## Project setup
 ```
