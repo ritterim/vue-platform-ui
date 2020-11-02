@@ -8,7 +8,7 @@ Initial setup run `npm install` and the documentation site requires [vuese](http
 To run the project locally run the command `npm run server`
 
 #### Running The Documentation Site
-To build the documentation site locally run `npm run build:docs` which will create a `website` directery at the root of the project. `npm run serve docs` will run the local server for the doc site.
+To build the documentation site locally run `npm run build:docs` which will create a `website` directory at the root of the project. `npm run serve docs` will run the local server for the doc site.
 
 ### Compiles and minifies for production
 ```
