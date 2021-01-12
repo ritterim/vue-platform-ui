@@ -20,10 +20,11 @@
     <div class="block-container mb-6 mx-4">
       <div class="block tablet-up-6">
         <h2>Accordion</h2>
-        <pui-accordion 
-          header="Accordion Header!" 
+        <pui-accordion
+          header="Accordion Header!"
           header-classes="px-3 py-3 flex--justify-between flex--align-center"
-          content-classes="px-3 py-3">
+          content-classes="px-3 py-3"
+        >
           This is where the accordion content should go!
         </pui-accordion>
       </div>
@@ -33,12 +34,12 @@
     <div class="block-container mb-6 mx-4">
       <div class="block tablet-up-4 laptop-up-3">
         <h2>Card</h2>
-        <pui-card 
-          header="This is the Card Header" 
+        <pui-card
+          header="This is the Card Header"
           card-classes="px-4 background-lightblue"
           header-classes="text--bold"
-          content-classes="text-orange">
-
+          content-classes="text-orange"
+        >
           <!-- 
             TODO: 
               - Figure out how to use named slots in vue-custom-elements...
@@ -84,15 +85,141 @@
       </div>
     </div>
 
+    <!-- Pills -->
+    <div class="block-container mx-4">
+      <div class="block tablet-up-4">
+        <h2>Pills</h2>
+      </div>
+    </div>
+
+    <!-- Pill Default -->
+    <div class="block-container mx-4">
+      <div class="block tablet-up-4">
+        <h3>Pill - Default</h3>
+<pui-pill>
+  Hello, World!
+</pui-pill>
+        <pui-pill pill-classes="background-navy text-white">
+          Hello, World!
+        </pui-pill>
+        <pui-pill
+          pill-classes="background-navy text-white"
+          status-class="negative">
+          Hello, World!
+        </pui-pill>
+        <pui-pill
+          pill-classes="background-navy text-white"
+          status-class="positive">
+          Hello, World!
+        </pui-pill>
+
+      </div>
+    </div>
+
+    <!-- Pill Dot -->
+    <div class="block-container mx-4">
+      <div class="block tablet-up-4">
+        <h3>Pill - Dot</h3>
+        <pui-pill
+          dot="true"
+          pill-classes="text-white background-navy"
+          dot="true">
+        </pui-pill>
+        <pui-pill
+          dot="true"
+          pill-classes="text-white background-navy"
+          status-class="negative"
+          dot="true">
+        </pui-pill>
+        <pui-pill
+          dot="true"
+          pill-classes="text-white background-navy"
+          status-class="positive"
+          dot="true">
+        </pui-pill>
+      </div>
+    </div>
+
+    <!-- Pill Circle -->
+    <div class="block-container mx-4">
+      <div class="block tablet-up-4">
+        <h3>Pill - Circle</h3>
+        <pui-pill
+          circle="true"
+          circle-empty="true"
+          pill-classes="text-white background-navy">
+        </pui-pill>
+        <pui-pill
+          circle="true"
+          pill-classes="text-white background-navy"
+          circle-empty="true"
+          status-class="negative">
+        </pui-pill>
+        <pui-pill
+          circle="true"
+          circle-empty="true"
+          pill-classes="text-white background-navy"
+          status-class="positive">
+        </pui-pill>
+      </div>
+    </div>
+
+    <!-- Pill Circle Large -->
+    <div class="block-container mx-4">
+      <div class="block tablet-up-4">
+        <h3>Pill - Large Circle</h3>
+        <pui-pill
+          circle="true"
+          circle-empty="true"
+          circle-size="large"
+          pill-classes="text-white background-navy">
+        </pui-pill>
+        <pui-pill
+          circle="true"
+          circle-empty="true"
+          circle-size="large"
+          pill-classes="text-white background-navy"
+          status-class="negative">
+        </pui-pill>
+        <pui-pill
+          circle="true"
+          circle-empty="true"
+          circle-size="large"
+          pill-classes="text-white background-navy"
+          status-class="positive">
+        </pui-pill>
+      </div>
+    </div>
+
+    <!-- Pill Split -->
+    <div class="block-container mb-6 mx-4">
+      <div class="block tablet-up-4">
+        <h3>Pill - Split</h3>
+        <pui-pill
+          split="true"
+          label="Label"
+          content="Content 1, Content 2">
+        </pui-pill>
+        <pui-pill
+          split="true"
+          label="Label"
+          pill-classes="border--color-med-blue"
+          label-classes="background-med-blue text-white"
+          content="Content"
+          content-classes="background-lightblue">
+        </pui-pill>
+      </div>
+    </div>
+
     <!-- Tooltip -->
     <div class="block-container mb-6 mx-4">
       <div class="block tablet-up-4">
         <h2>Tooltip</h2>
-          <pui-tool-tip direction="top" message="Pretty neat, huh?">
-            <button class="button mb-6">
-              Hover over me!
-            </button>
-          </pui-tool-tip>
+        <pui-tool-tip direction="top" message="Pretty neat, huh?">
+          <button class="button mb-6">
+            Hover over me!
+          </button>
+        </pui-tool-tip>
       </div>
     </div>
 

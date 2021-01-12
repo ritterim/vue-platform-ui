@@ -27,7 +27,6 @@ export default {
   },
   computed: {
     computedType() {
-      console.log(this.direction);
 
       let className = 'tooltip-top';
 
