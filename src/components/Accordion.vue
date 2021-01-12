@@ -3,15 +3,16 @@
     <a
       href="#"
       @click.prevent="toggleAccordion"
-      class="accordion__header px-3 py-3 flex--justify-between flex--align-center">
+      class="accordion__header"
+      :class="headerClasses">
       <div class="flex flex--align-center">
         {{ header }}
       </div>
       <i class="pi-angle-down accordion__icon text-med-blue"></i>
     </a>
     <div
-      class="accordion__content px-3 py-3"
-      :class="{ active: accordionOpen }">
+      class="accordion__content"
+      :class="[{ active: accordionOpen }, contentClasses]">
       <slot>Accordion Content</slot>
     </div>
   </div>
@@ -25,6 +26,18 @@ export default {
       type: String,
       default: 'Accordion Header',
       required: true,
+      validator: function (value) {
+        return typeof value === 'string';
+      },
+    },
+    headerClasses: {
+      type: String,
+      validator: function (value) {
+        return typeof value === 'string';
+      },
+    },
+    contentClasses: {
+      type: String,
       validator: function (value) {
         return typeof value === 'string';
       },

@@ -1,5 +1,5 @@
 <template>
-  <figure class="figure-hover">
+  <figure class="figure-hover" :class="figureClasses">
     <img :src="src" :alt="caption" />
     <figcaption>{{caption}}</figcaption>
   </figure>
@@ -22,7 +22,13 @@ export default {
       validator: function (value) {
         return typeof value === 'string';
       }
-    }
+    },
+    figureClasses: {
+      type: String,
+      validator: function (value) {
+        return typeof value === 'string';
+      },
+    },
   }
 }
 </script>

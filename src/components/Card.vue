@@ -1,15 +1,13 @@
 <template>
-  <div class="card">
-    <div class="card__content">
-      <div v-if="header" class="card__header">
-        {{ header }}
-      </div>
-
-      <!-- Display if the group slot is utilized -->
-      <div v-if="checkForGroup" class="card__group">
-        <slot name="group"></slot>
-      </div>
-
+  <div class="card" :class="cardClasses">
+    <div v-if="header" class="card__header" :class="headerClasses">
+      {{ header }}
+    </div>
+    <!-- Display if the group slot is utilized -->
+    <div v-if="checkForGroup" class="card__group" :class="groupClasses">
+      <slot name="group"></slot>
+    </div>
+    <div class="card__content" :class="contentClasses">
       <slot>Card Content</slot>
     </div>
   </div>
@@ -21,17 +19,40 @@ export default {
   props: {
     header: {
       type: String,
-      default: null,
       validator: function (value) {
         return typeof value === 'string';
-      }
+      },
+    },
+    cardClasses: {
+      type: String,
+      validator: function (value) {
+        return typeof value === 'string';
+      },
+    },
+    headerClasses: {
+      type: String,
+      validator: function (value) {
+        return typeof value === 'string';
+      },
+    },
+    groupClasses: {
+      type: String,
+      validator: function (value) {
+        return typeof value === 'string';
+      },
+    },
+    contentClasses: {
+      type: String,
+      validator: function (value) {
+        return typeof value === 'string';
+      },
     }
   },
-  computed:{
-    checkForGroup(){
+  computed: {
+    checkForGroup() {
       // Return true if there is a group slot present
-      return !!this.$slots.group
-    }
-  }
+      return !!this.$slots.group;
+    },
+  },
 };
 </script>
