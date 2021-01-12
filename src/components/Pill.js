@@ -6,4 +6,5 @@ Vue.config.ignoredElements = ['pui-pill'];
 
 Vue.use(vueCustomElement);
 
+// Parent
 Vue.customElement('pui-pill', Pill)

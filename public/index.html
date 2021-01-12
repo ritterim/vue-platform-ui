@@ -121,26 +121,9 @@
     <div class="block-container mx-4">
       <div class="block tablet-up-4">
         <h3>Pill - Dot</h3>
-        <pui-pill
-          dot="true"
-          pill-classes="text-white background-navy"
-          dot="true"
-        >
-        </pui-pill>
-        <pui-pill
-          dot="true"
-          pill-classes="text-white background-navy"
-          status-class="negative"
-          dot="true"
-        >
-        </pui-pill>
-        <pui-pill
-          dot="true"
-          pill-classes="text-white background-navy"
-          status-class="positive"
-          dot="true"
-        >
-        </pui-pill>
+        <pui-pill-dot pill-classes="background-navy"></pui-pill-dot>
+        <pui-pill-dot status-class="negative"></pui-pill-dot>
+        <pui-pill-dot status-class="positive"></pui-pill-dot>
       </div>
     </div>
 
@@ -148,56 +131,19 @@
     <div class="block-container mx-4">
       <div class="block tablet-up-4">
         <h3>Pill - Circle</h3>
-        <pui-pill
-          circle="true"
-          circle-empty="true"
-          pill-classes="text-white background-navy"
-        >
-        </pui-pill>
-        <pui-pill
-          circle="true"
-          pill-classes="text-white background-navy"
-          circle-empty="true"
-          status-class="negative"
-        >
-        </pui-pill>
-        <pui-pill
-          circle="true"
-          circle-empty="true"
-          pill-classes="text-white background-navy"
-          status-class="positive"
-        >
-        </pui-pill>
+        <pui-pill-circle pill-classes="background-navy"></pui-pill-circle>
+        <pui-pill-circle status-class="negative"></pui-pill-circle> 
+        <pui-pill-circle status-class="positive"></pui-pill-circle>
       </div>
     </div>
 
     <!-- Pill Circle Large -->
     <div class="block-container mx-4">
       <div class="block tablet-up-4">
-        <h3>Pill - Large Circle</h3>
-        <pui-pill
-          circle="true"
-          circle-empty="true"
-          circle-size="large"
-          pill-classes="text-white background-navy"
-        >
-        </pui-pill>
-        <pui-pill
-          circle="true"
-          circle-empty="true"
-          circle-size="large"
-          pill-classes="text-white background-navy"
-          status-class="negative"
-        >
-        </pui-pill>
-        <pui-pill
-          circle="true"
-          circle-empty="true"
-          circle-size="large"
-          pill-classes="text-white background-navy"
-          status-class="positive"
-        >
-        </pui-pill>
+        <h3>Pill - Circle Large</h3>
+        <pui-pill-circle circle-size="large" pill-classes="background-navy"></pui-pill-circle>
+        <pui-pill-circle circle-size="large" status-class="negative"></pui-pill-circle> 
+        <pui-pill-circle circle-size="large" status-class="positive"></pui-pill-circle>
       </div>
     </div>
 
@@ -205,16 +151,10 @@
     <div class="block-container mb-6 mx-4">
       <div class="block tablet-up-4">
         <h3>Pill - Split</h3>
-        <pui-pill split="true" label="Label" content="Content 1, Content 2">
-        </pui-pill>
-        <pui-pill
-          split="true"
-          label="Label"
-          pill-classes="border--color-med-blue"
-          label-classes="background-med-blue text-white"
-          content="Content"
-          content-classes="background-lightblue"
-        >
+        <pui-pill split="true">
+          <pui-pill-label label-classes="background-navy text-white">Label</pui-pill-label>
+          <pui-pill-content content-classes="background-lightblue">Data 1</pui-pill-content>
+          <pui-pill-content>Data 2</pui-pill-content>
         </pui-pill>
       </div>
     </div>

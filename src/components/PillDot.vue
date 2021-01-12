@@ -1,30 +1,15 @@
 <template>
-  <div
-    class="pill"
-    :class="[
-      pillClasses,
-      (split == 'true') ? 'pill--split' : null ,
-      statusClass,
-    ]"
-  >
-    <slot></slot>
-  </div>
+  <div class="pill pill--circle-empty-dot" :class="[pillClasses, statusClass]"></div>
 </template>
 
 <script>
 export default {
-  name: 'pill',
+  name: 'pill-circle',
   props: {
     pillClasses: {
       type: String,
       validator: function (value) {
         return typeof value === 'string';
-      },
-    },
-    split: {
-      type: String,
-      validator: function (value) {
-        return value === 'true';
       },
     },
     statusClass: {

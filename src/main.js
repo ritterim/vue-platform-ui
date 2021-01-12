@@ -8,4 +8,8 @@ import './components/Card.js';
 import './components/FigureHover.js';
 import './components/Message.js';
 import './components/Pill.js';
+import './components/PillDot.js';
+import './components/PillCircle.js';
+import './components/PillLabel.js';
+import './components/PillContent.js';
 import './components/ToolTip.js';
