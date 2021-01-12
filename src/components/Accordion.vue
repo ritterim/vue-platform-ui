@@ -1,5 +1,5 @@
 <template>
-  <div class="accordion" :class="{ active: accordionOpen }">
+  <div class="accordion" :class="[{ active: accordionOpen }, accordionClasses]">
     <a
       href="#"
       @click.prevent="toggleAccordion"
@@ -26,6 +26,12 @@ export default {
       type: String,
       default: 'Accordion Header',
       required: true,
+      validator: function (value) {
+        return typeof value === 'string';
+      },
+    },
+    accordionClasses: {
+      type: String,
       validator: function (value) {
         return typeof value === 'string';
       },
