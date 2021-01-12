@@ -1,17 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
     </noscript>
-    <pui-accordion></pui-accordion>
+
+    <!-- Accordion -->
+    <div class="block-container mb-6 mx-4">
+      <div class="block tablet-up-6">
+        <h2>Accordion</h2>
+        <pui-accordion header="Accordion Header!">
+          This is where the accordion content should go!
+        </pui-accordion>
+      </div>
+    </div>
+
+    <!-- Card Component -->
+    <div class="block-container mb-6 mx-4">
+      <div class="block tablet-up-4 laptop-up-3">
+        <h2>Card</h2>
+        <pui-card header="This is the Card Header">
+          
+          <!-- 
+            TODO: 
+              - Figure out how to use named slots in vue-custom-elements...
+              - Found documentation on this, but doesn't seem to be working
+              - https://github.com/karol-f/vue-custom-element/pull/121
+          -->
+          <!--
+            <template slot id="group">
+              <h1>Heading</h1>
+              <button>Button!</button>
+            </template> 
+          -->
+
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
+            consectetur libero quidem quia, harum voluptates fugit, explicabo
+            voluptate ullam veniam dignissimos obcaecati animi repellat impedit
+            facere quas molestias perspiciatis exercitationem?
+          </p>
+        </pui-card>
+      </div>
+    </div>
+
+    <!-- Figure Hover -->
+    <div class="block-container mb-6 mx-4">
+      <div class="block tablet-up-4">
+        <h2>Figure Hover</h2>
+        <pui-figure-hover
+          src="https://images.unsplash.com/photo-1497124401559-3e75ec2ed794?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+          caption="batman wuz here"
+        ></pui-figure-hover>
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div class="block-container mb-6 mx-4">
+      <div class="block tablet-up-4">
+        <h2>Message</h2>
+        <pui-message type="error" header="OH NO LOOK OUT!">
+          This is an error message!!!
+        </pui-message>
+      </div>
+    </div>
+
+    <!-- Tooltip -->
+    <div class="block-container mb-6 mx-4">
+      <div class="block tablet-up-4">
+        <h2>Tooltip</h2>
+        <button class="button">
+          <pui-tool-tip direction="top" message="Neat, huh?">
+            Hover over me!
+          </pui-tool-tip>
+        </button>
+      </div>
+    </div>
+
     <!-- built files will be auto injected -->
   </body>
 </html>
