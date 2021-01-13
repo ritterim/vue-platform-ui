@@ -53,7 +53,7 @@
             </template> 
           -->
 
-          <p>
+          <p  data-tooltip="Hello, World!" class="tooltip-bottom">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
             consectetur libero quidem quia, harum voluptates fugit, explicabo
             voluptate ullam veniam dignissimos obcaecati animi repellat impedit
@@ -152,24 +152,17 @@
       <div class="block tablet-up-4">
         <h3>Pill - Split</h3>
         <pui-pill split="true">
-          <pui-pill-label label-classes="background-navy text-white">Label</pui-pill-label>
+          <pui-pill-label label-classes="background-navy text-white"  >Label</pui-pill-label>
           <pui-pill-content content-classes="background-lightblue">Data 1</pui-pill-content>
           <pui-pill-content>Data 2</pui-pill-content>
         </pui-pill>
       </div>
     </div>
 
-    <!-- Tooltip -->
-    <div class="block-container mb-6 mx-4">
-      <div class="block tablet-up-4">
-        <h2>Tooltip</h2>
-        <pui-tool-tip direction="top" message="Pretty neat, huh?">
-          <button class="button mb-6">
-            Hover over me!
-          </button>
-        </pui-tool-tip>
-      </div>
-    </div>
+    <pui-modal open="true" header="Modal Header" centered="true" size="small">
+      <h3>This is my modal content</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati illum, culpa fugit soluta molestiae recusandae dolorem deleniti veritatis maiores, placeat, doloribus praesentium nisi necessitatibus. Consequatur ex accusantium fuga modi excepturi?</p>
+    </pui-modal>
 
     <!-- built files will be auto injected -->
   </body>

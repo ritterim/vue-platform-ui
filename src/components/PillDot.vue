@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'pill-circle',
+  name: 'pill-dot',
   props: {
     pillClasses: {
       type: String,
