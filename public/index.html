@@ -7,7 +7,7 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body style="background:#EFEFEF">
+  <body>
     <noscript>
       <strong
         >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
@@ -132,7 +132,7 @@
       <div class="block tablet-up-4">
         <h3>Pill - Circle</h3>
         <pui-pill-circle pill-classes="background-navy"></pui-pill-circle>
-        <pui-pill-circle status-class="negative"></pui-pill-circle> 
+        <pui-pill-circle status-class="negative"></pui-pill-circle>
         <pui-pill-circle status-class="positive"></pui-pill-circle>
       </div>
     </div>
@@ -141,9 +141,18 @@
     <div class="block-container mx-4">
       <div class="block tablet-up-4">
         <h3>Pill - Circle Large</h3>
-        <pui-pill-circle circle-size="large" pill-classes="background-navy"></pui-pill-circle>
-        <pui-pill-circle circle-size="large" status-class="negative"></pui-pill-circle> 
-        <pui-pill-circle circle-size="large" status-class="positive"></pui-pill-circle>
+        <pui-pill-circle
+          circle-size="large"
+          pill-classes="background-navy"
+        ></pui-pill-circle>
+        <pui-pill-circle
+          circle-size="large"
+          status-class="negative"
+        ></pui-pill-circle>
+        <pui-pill-circle
+          circle-size="large"
+          status-class="positive"
+        ></pui-pill-circle>
       </div>
     </div>
 
@@ -152,8 +161,12 @@
       <div class="block tablet-up-4">
         <h3>Pill - Split</h3>
         <pui-pill split="true">
-          <pui-pill-label label-classes="background-navy text-white"  >Label</pui-pill-label>
-          <pui-pill-content content-classes="background-lightblue">Data 1</pui-pill-content>
+          <pui-pill-label label-classes="background-navy text-white"
+            >Label</pui-pill-label
+          >
+          <pui-pill-content content-classes="background-lightblue"
+            >Data 1</pui-pill-content
+          >
           <pui-pill-content>Data 2</pui-pill-content>
         </pui-pill>
       </div>
@@ -169,10 +182,11 @@
     <div class="block-container mb-6 mx-4">
       <div class="block tablet-up-4">
         <h2>Icons</h2>
-        <pui-icon 
+        <pui-icon
           icon="pi-light-bulb-off"
-          icon-classes="text-orange" 
-          size="double-extra-large">
+          icon-classes="text-orange"
+          size="double-extra-large"
+        >
         </pui-icon>
       </div>
     </div>
@@ -184,7 +198,8 @@
         <pui-image-round
           size="large"
           src="https://images.unsplash.com/photo-1560114928-40f1f1eb26a0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-          alt="Kitten!">
+          alt="Kitten!"
+        >
         </pui-image-round>
       </div>
     </div>
@@ -203,6 +218,20 @@
       direction="right">
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio ab aliquam natus vel rem velit accusantium deleniti libero, dolorem suscipit voluptate voluptatum impedit maxime nihil ipsa quibusdam, voluptatem et dolore.</p>
     </pui-drawer> -->
+
+    <!-- Button -->
+    <div class="block-container mb-6 mx-4">
+      <div class="block tablet-up-4 mb-5">
+        <h2>Button</h2>
+        <pui-button>Button</pui-button>
+        <pui-button size="large">Button</pui-button>
+        <pui-button 
+          size="large" 
+          button-classes="background-salmon text-white">
+          Button
+        </pui-button>
+      </div>
+    </div>
 
     <!-- built files will be auto injected -->
   </body>
