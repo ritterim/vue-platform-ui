@@ -30,7 +30,6 @@ export default {
   },
   computed: {
     computedType() {
-
       let className = 'tooltip-top';
 
       switch (this.direction) {

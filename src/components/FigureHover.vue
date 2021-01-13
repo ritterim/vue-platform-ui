@@ -1,29 +1,29 @@
 <template>
   <figure class="figure-hover" :class="figureClasses">
     <img :src="src" :alt="caption" />
-    <figcaption>{{caption}}</figcaption>
+    <figcaption>{{ caption }}</figcaption>
   </figure>
 </template>
 
 <script>
 export default {
-  name:'figure-hover',
-  props:{
+  name: 'figure-hover',
+  props: {
     // Set the image src
-    src:{
+    src: {
       type: String,
       required: true,
       validator: function (value) {
         return typeof value === 'string';
-      }
+      },
     },
     // Set the figure caption
-    caption:{
+    caption: {
       type: String,
       required: true,
       validator: function (value) {
         return typeof value === 'string';
-      }
+      },
     },
     // Pass in CSS classes to apply to the .figure-hover element
     figureClasses: {
@@ -32,6 +32,6 @@ export default {
         return typeof value === 'string';
       },
     },
-  }
-}
+  },
+};
 </script>

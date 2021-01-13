@@ -1,7 +1,5 @@
 <template>
-  <div 
-    class="pill__label" 
-    :class="labelClasses">
+  <div class="pill__label" :class="labelClasses">
     <!-- Set the pill__label content -->
     <slot></slot>
   </div>

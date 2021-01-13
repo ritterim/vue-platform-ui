@@ -1,9 +1,5 @@
 <template>
-  <div class="drawer" :class="[
-    drawerDirection, 
-    drawerSize,
-    drawerClasses, 
-    ]">
+  <div class="drawer" :class="[drawerDirection, drawerSize, drawerClasses]">
     <div class="drawer__inner">
       <div class="drawer__header" :class="headerClasses">
         <button class="button drawer__close" data-drawer="default">

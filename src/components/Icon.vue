@@ -21,12 +21,16 @@ export default {
       },
     },
     // Set the size of the icon
-    size:{
+    size: {
       type: String,
       validator: function (value) {
-        return ['small', 'large', 'extra-large', 'double-extra-large'].indexOf(value) !== -1;
+        return (
+          ['small', 'large', 'extra-large', 'double-extra-large'].indexOf(
+            value
+          ) !== -1
+        );
       },
-    }
+    },
   },
   computed: {
     iconSize() {

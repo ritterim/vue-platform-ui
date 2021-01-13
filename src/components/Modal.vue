@@ -9,10 +9,7 @@
   >
     <div class="modal__inner">
       <div class="modal__header" :class="headerClasses">
-        <button
-          class="button modal__close"
-          data-modal="default-modal"
-        >
+        <button class="button modal__close" data-modal="default-modal">
           Close
           <i class="pi-times"></i>
         </button>

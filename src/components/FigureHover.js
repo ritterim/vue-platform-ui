@@ -6,4 +6,4 @@ Vue.config.ignoredElements = ['pui-figure-hover'];
 
 Vue.use(vueCustomElement);
 
-Vue.customElement('pui-figure-hover', FigureHover)
+Vue.customElement('pui-figure-hover', FigureHover);

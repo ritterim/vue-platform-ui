@@ -1,8 +1,5 @@
 <template>
-  <div 
-    class="message" 
-    :class="computedType" 
-    :data-header="header">
+  <div class="message" :class="computedType" :data-header="header">
     <!--  Set the message content -->
     <slot></slot>
   </div>
@@ -18,7 +15,9 @@ export default {
       default: 'information',
       required: false,
       validator: function (value) {
-        return ['error', 'information', 'success', 'warning'].indexOf(value) !== -1
+        return (
+          ['error', 'information', 'success', 'warning'].indexOf(value) !== -1
+        );
       },
     },
     // Set the message header
@@ -50,7 +49,7 @@ export default {
         default:
           className = 'message--info';
       }
-      
+
       return className;
     },
   },

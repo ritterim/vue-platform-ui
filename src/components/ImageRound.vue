@@ -14,7 +14,11 @@ export default {
       default: 'image--round-medium',
       required: true,
       validator: function (value) {
-        return ['small', 'large', 'extra-large', 'double-extra-large'].indexOf(value) !== -1;
+        return (
+          ['small', 'large', 'extra-large', 'double-extra-large'].indexOf(
+            value
+          ) !== -1
+        );
       },
     },
     // Set the img src attribute

@@ -1,11 +1,7 @@
 <template>
   <div
     class="pill"
-    :class="[
-      pillClasses,
-      (split == 'true') ? 'pill--split' : null ,
-      statusClass,
-    ]"
+    :class="[pillClasses, split == 'true' ? 'pill--split' : null, statusClass]"
   >
     <!-- Set the pill content -->
     <slot></slot>

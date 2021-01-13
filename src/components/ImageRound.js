@@ -6,4 +6,4 @@ Vue.config.ignoredElements = ['pui-image-round'];
 
 Vue.use(vueCustomElement);
 
-Vue.customElement('pui-image-round', ImageRound)
+Vue.customElement('pui-image-round', ImageRound);

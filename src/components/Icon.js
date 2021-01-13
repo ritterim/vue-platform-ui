@@ -6,4 +6,4 @@ Vue.config.ignoredElements = ['pui-icon'];
 
 Vue.use(vueCustomElement);
 
-Vue.customElement('pui-icon', Icon)
+Vue.customElement('pui-icon', Icon);

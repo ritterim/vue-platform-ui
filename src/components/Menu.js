@@ -7,4 +7,4 @@ Vue.use(vueCustomElement);
 Vue.customElement('pui-menu', {
   name: 'pui-menu',
   render: h => h(Menu)
-})
+});

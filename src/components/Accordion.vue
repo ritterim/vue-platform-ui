@@ -4,7 +4,8 @@
       href="#"
       @click.prevent="toggleAccordion"
       class="accordion__header"
-      :class="headerClasses">
+      :class="headerClasses"
+    >
       <div class="flex flex--align-center">
         {{ header }}
       </div>
@@ -12,7 +13,8 @@
     </a>
     <div
       class="accordion__content"
-      :class="[{ active: accordionOpen }, contentClasses]">
+      :class="[{ active: accordionOpen }, contentClasses]"
+    >
       <!-- Sets the Accordion Content -->
       <slot></slot>
     </div>
@@ -20,6 +22,7 @@
 </template>
 
 <script>
+// The Platform UI Accordion is a component that expands when the header is clicked to reveal more content.
 export default {
   name: 'accordion',
   props: {
@@ -62,7 +65,7 @@ export default {
   methods: {
     toggleAccordion() {
       this.accordionOpen = !this.accordionOpen;
-    }
-  }
+    },
+  },
 };
 </script>

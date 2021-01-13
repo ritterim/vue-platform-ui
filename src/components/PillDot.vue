@@ -1,5 +1,8 @@
 <template>
-  <div class="pill pill--circle-empty-dot" :class="[pillClasses, statusClass]"></div>
+  <div
+    class="pill pill--circle-empty-dot"
+    :class="[pillClasses, statusClass]"
+  ></div>
 </template>
 
 <script>

@@ -6,4 +6,4 @@ Vue.config.ignoredElements = ['pui-drawer'];
 
 Vue.use(vueCustomElement);
 
-Vue.customElement('pui-drawer', Drawer)
+Vue.customElement('pui-drawer', Drawer);

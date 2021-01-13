@@ -6,4 +6,4 @@ Vue.config.ignoredElements = ['pui-message'];
 
 Vue.use(vueCustomElement);
 
-Vue.customElement('pui-message', Message)
+Vue.customElement('pui-message', Message);

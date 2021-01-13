@@ -6,4 +6,4 @@ Vue.config.ignoredElements = ['pui-loader'];
 
 Vue.use(vueCustomElement);
 
-Vue.customElement('pui-loader', Loader)
+Vue.customElement('pui-loader', Loader);
