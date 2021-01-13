@@ -11,7 +11,6 @@
     <div class="modal__inner">
       <div class="modal__header" :class="headerClasses">
         <button
-          @click="closeModal"
           class="button modal__close"
           data-modal="default-modal"
         >
