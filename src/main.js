@@ -7,6 +7,7 @@ import './components/Accordion.js';
 import './components/Card.js';
 import './components/FigureHover.js';
 import './components/Icon.js';
+import './components/ImageRound.js';
 import './components/Message.js';
 import './components/Modal.js';
 import './components/Pill.js';
