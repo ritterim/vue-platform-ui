@@ -5,7 +5,6 @@
       modalClasses,
       modalSize,
       centered === 'true' ? 'modal--centered' : null,
-      open !== 'true' ? 'modal--closed' : null,
     ]"
   >
     <div class="modal__inner">
@@ -66,12 +65,12 @@ export default {
         return value === 'true';
       },
     },
-    open: {
-      type: String,
-      validator: function (value) {
-        return value === 'true';
-      },
-    },
+    // open: {
+    //   type: String,
+    //   validator: function (value) {
+    //     return value === 'true';
+    //   },
+    // },
   },
   computed: {
     modalSize() {

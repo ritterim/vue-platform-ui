@@ -7,7 +7,7 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body>
+  <body style="background:#EFEFEF">
     <noscript>
       <strong
         >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
@@ -160,11 +160,10 @@
     </div>
 
     <!-- Modal -->
-    <!-- Add open="true" to view modal -->
-    <pui-modal header="Modal Header" centered="true" size="small">
+    <!-- <pui-modal header="Modal Header" centered="true" size="small">
       <h3>This is my modal content</h3>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati illum, culpa fugit soluta molestiae recusandae dolorem deleniti veritatis maiores, placeat, doloribus praesentium nisi necessitatibus. Consequatur ex accusantium fuga modi excepturi?</p>
-    </pui-modal>
+    </pui-modal> -->
 
     <!-- Icons -->
     <div class="block-container mb-6 mx-4">
@@ -198,9 +197,11 @@
       </div>
     </div>
 
-<pui-drawer header="Hello, Drawer!" direction="right">
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio ab aliquam natus vel rem velit accusantium deleniti libero, dolorem suscipit voluptate voluptatum impedit maxime nihil ipsa quibusdam, voluptatem et dolore.</p>
-</pui-drawer>
+    <pui-drawer 
+      header="Hello, Drawer!" 
+      direction="right">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio ab aliquam natus vel rem velit accusantium deleniti libero, dolorem suscipit voluptate voluptatum impedit maxime nihil ipsa quibusdam, voluptatem et dolore.</p>
+    </pui-drawer>
 
     <!-- built files will be auto injected -->
   </body>
