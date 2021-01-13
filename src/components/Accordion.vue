@@ -13,7 +13,8 @@
     <div
       class="accordion__content"
       :class="[{ active: accordionOpen }, contentClasses]">
-      <slot>Accordion Content</slot>
+      <!-- Sets the Accordion Content -->
+      <slot></slot>
     </div>
   </div>
 </template>
@@ -22,6 +23,7 @@
 export default {
   name: 'accordion',
   props: {
+    // Sets the accordion header
     header: {
       type: String,
       default: 'Accordion Header',
@@ -30,18 +32,21 @@ export default {
         return typeof value === 'string';
       },
     },
+    // Pass in CSS classes to apply to the accordion element
     accordionClasses: {
       type: String,
       validator: function (value) {
         return typeof value === 'string';
       },
     },
+    // Pass in CSS classes to apply to the accordion__header element
     headerClasses: {
       type: String,
       validator: function (value) {
         return typeof value === 'string';
       },
     },
+    // Pass in CSS classes to apply to the accordion__content element
     contentClasses: {
       type: String,
       validator: function (value) {

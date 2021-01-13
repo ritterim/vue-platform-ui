@@ -6,18 +6,21 @@
 export default {
   name: 'icon',
   props: {
+    // Pass in which icon to use by icon class name
     icon: {
       type: String,
       validator: function (value) {
         return typeof value === 'string';
       },
     },
+    // Pass in CSS classes to apply to the icon element
     iconClasses: {
       type: String,
       validator: function (value) {
         return typeof value === 'string';
       },
     },
+    // Set the size of the icon
     size:{
       type: String,
       validator: function (value) {

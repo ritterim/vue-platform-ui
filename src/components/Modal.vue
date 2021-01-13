@@ -19,6 +19,7 @@
         {{ header }}
       </div>
       <div class="modal__content" :class="contentClasses">
+        <!-- Pass in the modal content -->
         <slot></slot>
       </div>
     </div>
@@ -29,48 +30,48 @@
 export default {
   name: 'modal',
   props: {
+    // Pass in CSS classes to apply to the modal element
     modalClasses: {
       type: String,
       validator: function (value) {
         return typeof value === 'string';
       },
     },
+    // Set the modal__header content
     header: {
       type: String,
       validator: function (value) {
         return typeof value === 'string';
       },
     },
+    // Pass in CSS classes to apply to the modal__header element
     headerClasses: {
       type: String,
       validator: function (value) {
         return typeof value === 'string';
       },
     },
+    // Pass in CSS classes to apply to the modal__content element
     contentClasses: {
       type: String,
       validator: function (value) {
         return typeof value === 'string';
       },
     },
+    // Set the size of the modal
     size: {
       type: String,
       validator: function (value) {
         return ['small', 'large', 'full'].indexOf(value) !== -1;
       },
     },
+    // Set whether the modal is centered within the viewport
     centered: {
       type: String,
       validator: function (value) {
         return value === 'true';
       },
     },
-    // open: {
-    //   type: String,
-    //   validator: function (value) {
-    //     return value === 'true';
-    //   },
-    // },
   },
   computed: {
     modalSize() {

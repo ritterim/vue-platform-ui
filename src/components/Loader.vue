@@ -6,6 +6,7 @@
 export default {
   name: 'loader',
   props: {
+    // Sets the size of the loader
     size: {
       type: String,
       validator: function (value) {

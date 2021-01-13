@@ -8,6 +8,7 @@
 export default {
   name: 'image-round',
   props: {
+    // Set the size of the round image
     size: {
       type: String,
       default: 'image--round-medium',
@@ -16,6 +17,7 @@ export default {
         return ['small', 'large', 'extra-large', 'double-extra-large'].indexOf(value) !== -1;
       },
     },
+    // Set the img src attribute
     src: {
       type: String,
       required: true,
@@ -23,6 +25,7 @@ export default {
         return typeof value === 'string';
       },
     },
+    // Set the img alt attribute
     alt: {
       type: String,
       required: true,

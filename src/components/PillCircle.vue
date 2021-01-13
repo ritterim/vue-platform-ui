@@ -8,6 +8,7 @@
       statusClass,
     ]"
   >
+    <!-- Set the pill--cirlce content, but hidden if circleEmpty is set -->
     <slot v-if="!!circleEmpty"></slot>
   </div>
 </template>
@@ -16,24 +17,28 @@
 export default {
   name: 'pill-circle',
   props: {
+    // Pass in CSS classes to apply to the pill element
     pillClasses: {
       type: String,
       validator: function (value) {
         return typeof value === 'string';
       },
     },
+    // Set whether the element is empty or not (true applies pill--circle-empty class)
     circleEmpty: {
       type: String,
       validator: function (value) {
         return value === 'true';
       },
     },
+    // Set the size of the circle
     circleSize: {
       type: String,
       validator: function (value) {
         return ['medium', 'large'].indexOf(value) !== -1;
       },
     },
+    // Set either the negative or positive
     statusClass: {
       type: String,
       validator: function (value) {

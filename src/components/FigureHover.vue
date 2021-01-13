@@ -9,6 +9,7 @@
 export default {
   name:'figure-hover',
   props:{
+    // Set the image src
     src:{
       type: String,
       required: true,
@@ -16,6 +17,7 @@ export default {
         return typeof value === 'string';
       }
     },
+    // Set the figure caption
     caption:{
       type: String,
       required: true,
@@ -23,6 +25,7 @@ export default {
         return typeof value === 'string';
       }
     },
+    // Pass in CSS classes to apply to the .figure-hover element
     figureClasses: {
       type: String,
       validator: function (value) {
