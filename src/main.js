@@ -5,6 +5,7 @@ import '../node_modules/@ritterim/platform-ui/dist/platform-ui.min.css';
 // Import Components
 import './components/Accordion.js';
 import './components/Card.js';
+import './components/Drawer.js';
 import './components/FigureHover.js';
 import './components/Icon.js';
 import './components/ImageRound.js';
