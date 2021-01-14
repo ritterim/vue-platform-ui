@@ -52,7 +52,6 @@
               <button>Button!</button>
             </template> 
           -->
-
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio
             consectetur libero quidem quia, harum voluptates fugit, explicabo
@@ -62,6 +61,21 @@
         </pui-card>
       </div>
     </div>
+
+
+    <div class="block-container">
+      <div class="block tablet-up-3 mb-6 mx-4">
+
+        <pui-card>
+          Card Content goes here!
+          <pui-button>Button</pui-button>
+        </pui-card>
+
+      </div>
+      <pui-button>Test</pui-button>
+    </div>
+
+
 
     <!-- Figure Hover -->
     <div class="block-container mb-6 mx-4">
@@ -160,23 +174,24 @@
     <div class="block-container mb-6 mx-4">
       <div class="block tablet-up-4">
         <h3>Pill - Split</h3>
+
         <pui-pill split="true">
-          <pui-pill-label label-classes="background-navy text-white"
-            >Label</pui-pill-label
-          >
-          <pui-pill-content content-classes="background-lightblue"
-            >Data 1</pui-pill-content
-          >
-          <pui-pill-content>Data 2</pui-pill-content>
+
+          <pui-pill-label label-classes="background-navy text-white">
+            Label
+          </pui-pill-label>
+
+          <pui-pill-content content-classes="background-lightblue">
+            Data 1
+          </pui-pill-content>
+
+          <pui-pill-content>
+            Data 2
+          </pui-pill-content>
         </pui-pill>
+
       </div>
     </div>
-
-    <!-- Modal -->
-    <!-- <pui-modal header="Modal Header" centered="true" size="small">
-      <h3>This is my modal content</h3>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati illum, culpa fugit soluta molestiae recusandae dolorem deleniti veritatis maiores, placeat, doloribus praesentium nisi necessitatibus. Consequatur ex accusantium fuga modi excepturi?</p>
-    </pui-modal> -->
 
     <!-- Icons -->
     <div class="block-container mb-6 mx-4">
@@ -223,15 +238,64 @@
     <div class="block-container mb-6 mx-4">
       <div class="block tablet-up-4 mb-5">
         <h2>Button</h2>
-        <pui-button>Button</pui-button>
-        <pui-button size="large">Button</pui-button>
-        <pui-button 
-          size="large" 
-          button-classes="background-salmon text-white">
+        <pui-button id="button-example-1" >Button</pui-button>
+        <pui-button id="button-example-2" size="large">Button</pui-button>
+        <pui-button id="button-example-3" size="large" button-classes="background-salmon text-white">
           Button
         </pui-button>
       </div>
     </div>
+
+    <!-- Modal -->
+    <!-- <div class="block-container mb-6 mx-4">
+      <div class="block tablet-up-4">
+        <h2>Modal</h2>
+        <pui-button id="modal-open-button">Open Modal</pui-button>
+        <pui-modal open="false">
+          <template slot id="header">
+            This is the header!
+            <pui-button id="modal-close-button">
+              Button
+            </pui-button>
+          </template>
+          This is the content!
+        </pui-modal>
+      </div>
+    </div> -->
+
+    <script defer>
+      // Open Modal Example
+      // const openModalBtn = document.getElementById("modal-open-button")
+      // const closeModalBtn = document.getElementById("modal-close-button")
+
+      // console.log(closeModalBtn)
+
+      // const modal = document.querySelector('pui-modal')
+      
+      // openModalBtn.addEventListener('click', () => {
+      //   modal.open = "true"
+      // });
+
+      // closeModalBtn.addEventListener('click', () => {
+      //   console.log('click')
+      // });
+      
+      // Buttons Example
+      // const exampleButton1 = document.getElementById('button-example-1')
+      // const exampleButton2 = document.getElementById('button-example-2')
+      // const exampleButton3 = document.getElementById('button-example-3')
+
+      // exampleButton1.addEventListener('click', ()=>{
+      //   alert('Button 1 Clicked!')
+      // })
+      // exampleButton2.addEventListener('click', ()=>{
+      //   alert('Button 2 Clicked!')
+      // })
+      // exampleButton3.addEventListener('click', ()=>{
+      //   alert('Button 3 Clicked!')
+      // })
+
+    </script>
 
     <!-- built files will be auto injected -->
   </body>

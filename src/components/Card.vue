@@ -1,17 +1,20 @@
 <template>
   <div class="card" :class="cardClasses">
+
     <div v-if="header" class="card__header" :class="headerClasses">
       {{ header }}
     </div>
+
     <!-- Display if the group slot is utilized -->
-    <div v-if="checkForGroup" class="card__group" :class="groupClasses">
-      <!-- Adds items to the card__group -->
+    <!-- <div v-if="checkForGroup" class="card__group" :class="groupClasses">
       <slot name="group"></slot>
-    </div>
+    </div> -->
+
     <div class="card__content" :class="contentClasses">
       <!-- Sets the Card content -->
       <slot></slot>
     </div>
+    
   </div>
 </template>
 
@@ -55,12 +58,12 @@ export default {
       },
     }
   },
-  computed: {
-    // Check to see if there is a group slot present
-    checkForGroup() {
-      // Return true if there is a group slot present
-      return !!this.$slots.group;
-    },
-  },
+  // computed: {
+  //   Check to see if there is a group slot present
+  //   checkForGroup() {
+  //     Return true if there is a group slot present
+  //     return !!this.$slots.group;
+  //   },
+  // },
 };
 </script>

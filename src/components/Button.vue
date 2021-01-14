@@ -1,12 +1,12 @@
 <template>
-  <button class="button" :class="[buttonSize, buttonClasses]">
+  <div class="button" :class="[buttonSize, buttonClasses]">
     <slot></slot>
-  </button>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'button',
+  name: 'platform-button',
   props: {
     // Pass in CSS classes to apply to the button element
     buttonClasses: {

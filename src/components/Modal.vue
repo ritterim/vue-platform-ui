@@ -8,15 +8,10 @@
     ]"
   >
     <div class="modal__inner">
-      <div class="modal__header" :class="headerClasses">
-        <button class="button modal__close" data-modal="default-modal">
-          Close
-          <i class="pi-times"></i>
-        </button>
-        {{ header }}
+      <div v-if="headerPresent" class="modal__header" :classes="headerClasses">
+        <slot name="header"></slot>
       </div>
-      <div class="modal__content" :class="contentClasses">
-        <!-- Pass in the modal content -->
+      <div class="modal__content" :classes="contentClasses">
         <slot></slot>
       </div>
     </div>
@@ -34,8 +29,8 @@ export default {
         return typeof value === 'string';
       },
     },
-    // Set the modal__header content
-    header: {
+    // Pass in CSS classes to apply to the modal__content element
+    contentClasses: {
       type: String,
       validator: function (value) {
         return typeof value === 'string';
@@ -43,13 +38,6 @@ export default {
     },
     // Pass in CSS classes to apply to the modal__header element
     headerClasses: {
-      type: String,
-      validator: function (value) {
-        return typeof value === 'string';
-      },
-    },
-    // Pass in CSS classes to apply to the modal__content element
-    contentClasses: {
       type: String,
       validator: function (value) {
         return typeof value === 'string';
@@ -69,8 +57,18 @@ export default {
         return value === 'true';
       },
     },
+    // Set whether the modal is open
+    // open: {
+    //   type: String,
+    //   validator: function (value) {
+    //     return ['true', 'false'].indexOf(value) !== -1;
+    //   },
+    // },
   },
   computed: {
+    headerPresent() {
+      return !!this.$slots.header;
+    },
     modalSize() {
       let className = null;
 
