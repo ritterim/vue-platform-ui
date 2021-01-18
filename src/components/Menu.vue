@@ -1,7 +1,13 @@
 <template>
-  <nav class="site-menu" :class="[menuClasses, addStyle]">
-    <slot></slot>
-  </nav>
+  <header class="site-menu-wrapper">
+    <button class="site-menu-mobile-action" @click.prevent="toggleMobileMenu">
+      <span class="sr-only">Toggle Navigation</span>
+      <i aria-hidden="true" focusable="false" class="pi-menu pi-xl"></i>
+    </button>
+    <nav class="site-menu" :class="[menuClasses, addStyle, open]">
+      <slot></slot>
+    </nav>
+  </header>
 </template>
 
 <script>
@@ -40,6 +46,20 @@ export default {
 
       return className;
     }
-  }
+  },
+  data() {
+    return {
+      open: null,
+    };
+  },
+  methods: {
+    toggleMobileMenu() {
+      if (this.open === null) {
+        this.open = 'active';
+      } else {
+        this.open = null;
+      }
+    },
+  },
 };
 </script>
