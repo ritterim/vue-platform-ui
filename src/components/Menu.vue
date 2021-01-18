@@ -17,7 +17,7 @@ export default {
     menuStyle: {
       type: String,
       validator: function (value) {
-        return ['bordered', 'underlined', 'bordered underlined', 'underlined bordered'].indexOf(value) !== -1;
+        return ['bordered', 'underlined'].indexOf(value) !== -1;
       }
     }
   },
@@ -32,10 +32,6 @@ export default {
             break;
           case 'underlined':
             className = 'hover-underline';
-            break;
-          case 'bordered underlined':
-          case 'underlined bordered':
-            className = 'site-menu--bordered hover-underline';
             break;
           default:
             className = null;
