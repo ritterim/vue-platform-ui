@@ -10,7 +10,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@ritterim/platform-ui": "^1.2.0",
+    "@vuese/cli": "^2.14.3",
     "core-js": "^3.6.5",
+    "g": "^2.0.1",
     "vue": "^2.6.11",
     "vue-custom-element": "^3.2.14"
   },
