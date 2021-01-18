@@ -30,6 +30,7 @@ export default {
   computed: {
     addStyle() {
       let className = null;
+
       if (this.menuStyle) {
         switch (this.menuStyle) {
           case 'bordered':
@@ -42,6 +43,7 @@ export default {
             className = null;
         }
       }
+      
       return className;
     }
   },
