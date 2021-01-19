@@ -1,10 +1,6 @@
-import Vue from 'vue';
-import vueCustomElement from 'vue-custom-element';
+import { createApp } from 'vue';
 import Accordion from './Accordion.vue';
 
-Vue.use(vueCustomElement);
+const app = createApp(Accordion);
 
-Vue.customElement('pui-accordion', {
-  name: 'pui-accordion',
-  render: h => h(Accordion)
-})
+app.mount('#app');
