@@ -61,6 +61,26 @@
         <a class="site-menu__item">Item 3</a>
       </pui-menu>
     </div>
+    <div class="block block-6 mt-3">
+      <pui-blockquote>
+        Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured.
+      </pui-blockquote>
+      <pui-blockquote blockquoteClasses="border--color-orange">
+        Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured.
+      </pui-blockquote>
+      <pui-blockquote citeURL="https://www.goodreads.com/quotes/tag/american-literature">
+        Perhaps as you went along you did learn something. I did not care what it was all about. All I wanted to know was how to live in it. Maybe if you found out how to live in it you learned from that what it was all about.
+      </pui-blockquote>
+      <pui-blockquote citeURL="https://www.goodreads.com/quotes/tag/american-literature">
+        Perhaps as you went along you did learn something. I did not care what it was all about. All I wanted to know was how to live in it. Maybe if you found out how to live in it you learned from that what it was all about.
+      </pui-blockquote>
+      <pui-blockquote citeURL="https://www.goodreads.com/quotes/tag/american-literature" cite="The Sun Also Rises" author="Ernest Hemingway">
+        Perhaps as you went along you did learn something. I did not care what it was all about. All I wanted to know was how to live in it. Maybe if you found out how to live in it you learned from that what it was all about.
+      </pui-blockquote>
+      <pui-blockquote author="Mark Twain">
+        Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured.
+      </pui-blockquote>
+    </div>
   </div>
 </template>
 
