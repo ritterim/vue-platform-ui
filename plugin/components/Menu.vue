@@ -4,7 +4,7 @@
       <span class="sr-only">Toggle Navigation</span>
       <i aria-hidden="true" focusable="false" class="pi-menu pi-xl"></i>
     </button>
-    <nav class="site-menu" :class="[menuClasses, addStyle, open]">
+    <nav class="site-menu" :class="[menuClasses, addStyle, {active: mobileOpen}]">
       <slot></slot>
     </nav>
   </header>
@@ -49,12 +49,12 @@ export default {
   },
   data() {
     return {
-      open: null,
+      mobileOpen: false,
     };
   },
   methods: {
     toggleMobileMenu() {
-      this.open = this.open === null ? 'active' : null
+      this.mobileOpen = !this.mobileOpen
     }
   }
 };

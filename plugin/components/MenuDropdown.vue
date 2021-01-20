@@ -1,5 +1,5 @@
 <template>
-  <div class="dropdown" :class="open">
+  <div class="dropdown" :class="{'dropdown-active': dropdownOpen}">
     <div class="site-menu__item dropdown__trigger" @click.prevent="toggleDropdown">
       {{ header }}
       <i class="ml-1 pi-angle-down" aria-hidden="true"></i>
@@ -23,12 +23,12 @@ export default {
   },
   data() {
     return {
-      open: null,
+      dropdownOpen: false,
     };
   },
   methods: {
     toggleDropdown() {
-      this.open = this.open === null ? 'dropdown-active' : null
+      this.dropdownOpen = !this.dropdownOpen
     }
   }
 };
