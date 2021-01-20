@@ -1,18 +1,27 @@
 <template>
   <div class="accordion" :class="[{ active: accordionOpen }, accordionClasses]">
-    <a
-      href="#"
-      @click.prevent="toggleAccordion"
+    <div
+      @click="toggleAccordion"
+      v-on:keyup.enter="toggleAccordion"
+      v-on:keyup.space="toggleAccordion"
       class="accordion__header"
-      :class="headerClasses">
+      :class="headerClasses"
+      :aria-expanded="accordionOpen"
+      role="button"
+      tabindex="0">
       <div class="flex flex--align-center">
         {{ header }}
       </div>
-      <i class="pi-angle-down accordion__icon text-med-blue"></i>
-    </a>
+      <i 
+        class="pi-angle-down accordion__icon text-med-blue" 
+        aria-hidden="true">
+      </i>
+    </div>
     <div
       class="accordion__content"
-      :class="[{ active: accordionOpen }, contentClasses]">
+      :class="[{ active: accordionOpen }, contentClasses]"
+      aria-role="region"
+      :aria-hidden="!accordionOpen">
       <!-- Sets the Accordion Content -->
       <slot></slot>
     </div>
