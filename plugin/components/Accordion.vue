@@ -4,8 +4,7 @@
       href="#"
       @click.prevent="toggleAccordion"
       class="accordion__header"
-      :class="headerClasses"
-    >
+      :class="headerClasses">
       <div class="flex flex--align-center">
         {{ header }}
       </div>
@@ -13,8 +12,7 @@
     </a>
     <div
       class="accordion__content"
-      :class="[{ active: accordionOpen }, contentClasses]"
-    >
+      :class="[{ active: accordionOpen }, contentClasses]">
       <!-- Sets the Accordion Content -->
       <slot></slot>
     </div>
@@ -31,30 +29,18 @@ export default {
       type: String,
       default: 'Accordion Header',
       required: true,
-      validator: function (value) {
-        return typeof value === 'string';
-      },
     },
     // Pass in CSS classes to apply to the accordion element
     accordionClasses: {
       type: String,
-      validator: function (value) {
-        return typeof value === 'string';
-      },
     },
     // Pass in CSS classes to apply to the accordion__header element
     headerClasses: {
       type: String,
-      validator: function (value) {
-        return typeof value === 'string';
-      },
     },
     // Pass in CSS classes to apply to the accordion__content element
     contentClasses: {
       type: String,
-      validator: function (value) {
-        return typeof value === 'string';
-      },
     },
   },
   data() {
