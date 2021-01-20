@@ -1,11 +1,11 @@
 <template>
-  <div class="card">
+  <div class="card__title">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'card',
+  name: 'card-title',
 };
 </script>
