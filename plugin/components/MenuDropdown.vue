@@ -28,12 +28,8 @@ export default {
   },
   methods: {
     toggleDropdown() {
-      if (this.open === null) {
-        this.open = 'dropdown-active';
-      } else {
-        this.open = null;
-      }
-    },
-  },
+      this.open = this.open === null ? 'dropdown-active' : null
+    }
+  }
 };
 </script>

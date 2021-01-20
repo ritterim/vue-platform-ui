@@ -54,12 +54,8 @@ export default {
   },
   methods: {
     toggleMobileMenu() {
-      if (this.open === null) {
-        this.open = 'active';
-      } else {
-        this.open = null;
-      }
-    },
-  },
+      this.open = this.open === null ? 'active' : null
+    }
+  }
 };
 </script>
