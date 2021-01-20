@@ -61,6 +61,24 @@
         <a class="site-menu__item">Item 3</a>
       </pui-menu>
     </div>
+    <div class="block mt-3">
+      <pui-tabs>
+        <pui-tab header="Tab 1" :index=1 name="tabs-1" :checked=true>
+          This is tab content
+        </pui-tab>
+        <pui-tab header="Tab 2" :index=2 name="tabs-1">
+          This is tab content for number 2
+        </pui-tab>
+      </pui-tabs>
+      <pui-tabs>
+        <pui-tab header="Tab 1" :index=3 name="tabs-2">
+          This is tab content
+        </pui-tab>
+        <pui-tab header="Tab 2" :index=4 name="tabs-2" :checked=true>
+          This is tab content for number 2
+        </pui-tab>
+      </pui-tabs>
+    </div>
   </div>
 </template>
 
