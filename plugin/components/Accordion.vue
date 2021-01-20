@@ -1,7 +1,5 @@
 <template>
-  <div 
-    class="accordion" 
-    :class="{ active: active }">
+  <div class="accordion" :class="{ active: active }">
     <slot></slot>
   </div>
 </template>
@@ -11,9 +9,10 @@
 export default {
   name: 'accordion',
   props: {
-    active:{
-      type:Boolean
-    }
-  }
+    // Prop to determine if the accordion is active or not
+    active: {
+      type: Boolean,
+    },
+  },
 };
 </script>
