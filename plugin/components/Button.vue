@@ -1,17 +1,13 @@
 <template>
-  <div class="button" :class="[buttonSize, buttonClasses]">
+  <div class="button" :class="buttonSize">
     <slot>Button Label</slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'button',
+  name: 'pui-button',
   props: {
-    // Pass in CSS classes to apply to the button element
-    buttonClasses: {
-      type: String,
-    },
     // Sets the size of the button
     size: {
       type: String,
