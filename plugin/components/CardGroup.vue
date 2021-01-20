@@ -1,11 +1,11 @@
 <template>
-  <div class="card">
+  <div class="card__group">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'card',
+  name: 'card-group',
 };
 </script>
