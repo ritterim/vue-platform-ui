@@ -15,10 +15,7 @@ export default {
   name: 'pui-menu-dropdown',
   props: {
     header: {
-      type: String,
-      validator: function (value) {
-        return typeof value === 'string';
-      },
+      type: String
     }
   },
   data() {

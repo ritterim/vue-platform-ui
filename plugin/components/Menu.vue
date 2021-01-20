@@ -15,10 +15,7 @@ export default {
   name: 'pui-menu',
   props: {
     menuClasses: {
-      type: String,
-      validator: function (value) {
-        return typeof value === 'string';
-      },
+      type: String
     },
     menuStyle: {
       type: String,
