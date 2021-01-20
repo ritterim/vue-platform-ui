@@ -7,7 +7,9 @@
             <i class="pi-quill"></i>
             <div class="card__title">Card Header</div>
           </div>
-          <pui-button></pui-button>
+          <pui-button size="large" class="background-salmon text-white"
+            >Button</pui-button
+          >
         </template>
         <template v-slot:content>
           <p>Content</p>
@@ -66,6 +68,6 @@
 
 <script>
 export default {
-  name: 'App'
-}
+  name: 'App',
+};
 </script>
