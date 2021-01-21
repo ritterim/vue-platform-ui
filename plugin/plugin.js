@@ -7,6 +7,7 @@ import CardHeader from './components/CardHeader.vue';
 import CardImage from './components/CardImage.vue';
 import CardTitle from './components/CardTitle.vue';
 import Button from './components/Button.vue';
+import FigureHover from './components/FigureHover.vue';
 import Menu from './components/Menu.vue';
 import MenuDropdown from './components/MenuDropdown.vue';
 
@@ -21,6 +22,7 @@ export default {
     app.component('pui-card-image', CardImage);
     app.component('pui-card-title', CardTitle);
     app.component('pui-button', Button);
+    app.component('pui-figure-hover', FigureHover);
     app.component('pui-menu', Menu);
     app.component('pui-menu-dropdown', MenuDropdown);
   }

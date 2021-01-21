@@ -92,6 +92,14 @@
     </div>
   </div>
 
+  <div class="block-container m-2">
+    <div class="block laptop-up-4">
+      <pui-figure-hover
+        src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+        caption="This is my caption!"
+      ></pui-figure-hover>
+    </div>
+  </div>
   <!-- 
     <div class="block block-12 mt-3">
       <pui-menu>
