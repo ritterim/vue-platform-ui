@@ -1,5 +1,5 @@
 <template>
-  <blockquote class="" :cite="citeURL">
+  <blockquote :cite="citeURL">
     <p>
       <slot></slot>
     </p>
