@@ -65,7 +65,7 @@
       <pui-blockquote>
         Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured.
       </pui-blockquote>
-      <pui-blockquote blockquoteClasses="border--color-orange">
+      <pui-blockquote class="border--color-orange">
         Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured.
       </pui-blockquote>
       <pui-blockquote citeURL="https://www.goodreads.com/quotes/tag/american-literature">

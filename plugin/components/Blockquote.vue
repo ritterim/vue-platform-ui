@@ -1,5 +1,5 @@
 <template>
-  <blockquote :class="blockquoteClasses" :cite="citeURL">
+  <blockquote class="" :cite="citeURL">
     <p>
       <slot></slot>
     </p>
@@ -13,9 +13,6 @@
 export default {
   name: 'pui-blockquote',
   props: {
-    blockquoteClasses: {
-      type: String
-    },
     author: {
       type: String
     },
