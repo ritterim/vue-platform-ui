@@ -11,6 +11,7 @@ import CardTitle from './components/CardTitle.vue';
 import Button from './components/Button.vue';
 import Menu from './components/Menu.vue';
 import MenuDropdown from './components/MenuDropdown.vue';
+import Blockquote from './components/Blockquote.vue';
 
 export default {
   install: app => {
@@ -27,5 +28,6 @@ export default {
     app.component('pui-button', Button);
     app.component('pui-menu', Menu);
     app.component('pui-menu-dropdown', MenuDropdown);
+    app.component('pui-blockquote', Blockquote);
   }
 };
