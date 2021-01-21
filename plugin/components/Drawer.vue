@@ -2,6 +2,7 @@
   <div
     class="drawer"
     :class="[{ 'drawer--closed': !open }, drawerDirection, drawerSize]"
+    :aria-hidden="!open"
   >
     <div class="drawer__inner">
       <slot></slot>
