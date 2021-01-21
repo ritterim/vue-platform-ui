@@ -1,13 +1,17 @@
 <template>
-  <div class="accordion" :class="{ active: active }">
+  <div
+    class="accordion__header"
+    :aria-expanded="active"
+    role="button"
+    tabindex="0"
+  >
     <slot></slot>
   </div>
 </template>
 
 <script>
-// The Platform UI Accordion is a component that expands when the header is clicked to reveal more content.
 export default {
-  name: 'accordion',
+  name: 'accordion-header',
   props: {
     // Prop to determine if the accordion is active or not
     active: {
