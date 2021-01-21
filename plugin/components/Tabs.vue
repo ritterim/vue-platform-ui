@@ -1,16 +1,11 @@
 <template>
-  <div class="tabs" :class="tabsClasses">
+  <div class="tabs">
     <slot></slot>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'pui-tabs',
-  props: {
-    tabsClasses: {
-      type: String
-    }
-  }
+  name: 'pui-tabs'
 };
 </script>

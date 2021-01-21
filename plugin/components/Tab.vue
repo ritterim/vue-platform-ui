@@ -1,7 +1,7 @@
 <template>
   <input type="radio" :id="index" :name="name" :checked="checked">
   <label :for="index" class="tab">
-    {{ header }}
+    <i v-if="icon" class="mr-1" :class="icon" focusable="false" aria-hidden="hidden"></i>{{ header }}
   </label>
   <div class="tab-panel">
     <slot></slot>
@@ -17,7 +17,7 @@ export default {
       required: true
     },
     index: {
-      type: Number,
+      type: String,
       required: true
     },
     name: {
@@ -25,8 +25,10 @@ export default {
       required: true
     },
     checked: {
-      type: Boolean,
-      required: true
+      type: Boolean
+    },
+    icon: {
+      type: String
     }
   }
 };

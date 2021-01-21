@@ -63,19 +63,47 @@
     </div>
     <div class="block mt-3">
       <pui-tabs>
-        <pui-tab header="Tab 1" :index=1 name="tabs-1" :checked=true>
+        <pui-tab header="Tab 1" index="1" name="tabs-1" checked>
           This is tab content
         </pui-tab>
-        <pui-tab header="Tab 2" :index=2 name="tabs-1">
+        <pui-tab header="Tab 2" index="2" name="tabs-1">
           This is tab content for number 2
+        </pui-tab>
+        <pui-tab header="Tab 3" index="3" name="tabs-1">
+          This is tab content for number 3
+        </pui-tab>
+      </pui-tabs>
+      <pui-tabs class="tabs--flat">
+        <pui-tab header="Shirts" index="shirts" name="tabs-2">
+          This is tab content
+        </pui-tab>
+        <pui-tab header="Shoes" index="shoes" name="tabs-2" checked>
+          This is tab content for number 2
+        </pui-tab>
+        <pui-tab header="Pants" index="pants" name="tabs-2">
+          This is tab content for number 3
+        </pui-tab>
+      </pui-tabs>
+      <pui-tabs class="tabs--flat unresponsive">
+        <pui-tab header="Ties" index="a" name="tabs-3">
+          This is tab content
+        </pui-tab>
+        <pui-tab header="Birds" index="b" name="tabs-3">
+          This is tab content for number 2
+        </pui-tab>
+        <pui-tab header="Words" index="c" name="tabs-3" checked>
+          This is tab content for number 3
         </pui-tab>
       </pui-tabs>
       <pui-tabs>
-        <pui-tab header="Tab 1" :index=3 name="tabs-2">
+        <pui-tab header="Folders" index="folders" name="tabs-4" icon="pi-folder-open">
           This is tab content
         </pui-tab>
-        <pui-tab header="Tab 2" :index=4 name="tabs-2" :checked=true>
+        <pui-tab header="Birds" index="birds" name="tabs-4" icon="pi-folder">
           This is tab content for number 2
+        </pui-tab>
+        <pui-tab header="Words" index="words" name="tabs-4" icon="pi-warning" checked>
+          This is tab content for number 3
         </pui-tab>
       </pui-tabs>
     </div>
