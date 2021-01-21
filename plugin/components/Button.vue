@@ -1,7 +1,7 @@
 <template>
-  <div class="button" :class="buttonSize">
+  <button class="button" :class="buttonSize">
     <slot>Button Label</slot>
-  </div>
+  </button>
 </template>
 
 <script>
