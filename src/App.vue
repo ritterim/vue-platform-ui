@@ -73,7 +73,7 @@
           This is tab content for number 3
         </pui-tab>
       </pui-tabs>
-      <pui-tabs class="tabs--flat">
+      <pui-tabs flat>
         <pui-tab header="Shirts" index="shirts" name="tabs-2">
           This is tab content
         </pui-tab>
@@ -84,7 +84,7 @@
           This is tab content for number 3
         </pui-tab>
       </pui-tabs>
-      <pui-tabs class="tabs--flat unresponsive">
+      <pui-tabs flat unresponsive>
         <pui-tab header="Ties" index="a" name="tabs-3">
           This is tab content
         </pui-tab>
