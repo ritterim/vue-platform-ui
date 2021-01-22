@@ -2,8 +2,8 @@
   <table class="table">
     <thead>
       <tr>
-        <th v-repeart="headers">
-          {}
+        <th v-for="header in headers" :v-id="header" :key="header">
+          {{header}}
         </th>
       </tr>
     </thead>

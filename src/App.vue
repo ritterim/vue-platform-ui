@@ -117,6 +117,10 @@
       Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured.
     </pui-blockquote>
   </div>
+  <div class="p-5">
+    <pui-table :headers="['Dog', 'Cat', 'Human']">
+    </pui-table>
+  </div>
 </template>
 
 <script>
