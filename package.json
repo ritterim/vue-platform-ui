@@ -9,7 +9,6 @@
     "build:docs": "vuese gen",
     "serve docs": "vuese serve --open"
   },
-  "style": "node_modules/@ritterim/platform-ui/dist/platform-ui.min.css",
   "dependencies": {
     "@ritterim/platform-ui": "^1.2.5",
     "@vuese/cli": "^2.14.3",
