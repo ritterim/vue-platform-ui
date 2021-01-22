@@ -13,17 +13,11 @@ export default {
     src: {
       type: String,
       required: true,
-      validator: function (value) {
-        return typeof value === 'string';
-      },
     },
     // Set the figure caption
     caption: {
       type: String,
       required: true,
-      validator: function (value) {
-        return typeof value === 'string';
-      },
     }
   },
 };
