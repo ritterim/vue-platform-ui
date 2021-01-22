@@ -61,7 +61,7 @@ export default {
             className = 'drawer-left';
             break;
           default:
-            className = null;
+            className = 'drawer-bottom';
         }
       }
       return className;
