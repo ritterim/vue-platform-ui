@@ -13,7 +13,8 @@ import Menu from './components/Menu.vue';
 import MenuDropdown from './components/MenuDropdown.vue';
 import Blockquote from './components/Blockquote.vue';
 import Table from './components/Table.vue';
-import TableRow from './components/TableRow.vue'
+import TableRow from './components/TableRow.vue';
+import TableCell from './components/TableCell.vue';
 
 export default {
   install: app => {
@@ -33,5 +34,6 @@ export default {
     app.component('pui-blockquote', Blockquote);
     app.component('pui-table', Table);
     app.component('pui-table-row', TableRow);
+    app.component('pui-table-cell', TableCell);
   }
 };
