@@ -120,15 +120,28 @@
   <div class="p-5">
     <pui-table :headers="['Dog', 'Cat', 'Human']">
       <pui-table-row :cells="[{label: 'Dog', data: 'Pit Bull'},{label: 'Cat', data: 'Short Hair'},{label: 'Human', data: 'Austin'}]"></pui-table-row>
+      <pui-table-row :cells="[{label: 'Dog', data: 'German Shepherd'},{label: 'Cat', data: 'Long Hair'},{label: 'Human', data: 'Kevin'}]"></pui-table-row>
+      <pui-table-row :cells="[{label: 'Dog', data: 'Poodle'},{label: 'Cat', data: 'Maine Coon'},{label: 'Human', data: 'Beth'}]"></pui-table-row>
     </pui-table>
     <pui-table :headers="['Dog', 'Cat', 'Human']" unresponsive>
       <pui-table-row :cells="[{label: 'Dog', data: 'Pit Bull'},{label: 'Cat', data: 'Short Hair'},{label: 'Human', data: 'Austin'}]"></pui-table-row>
+      <pui-table-row :cells="[{label: 'Dog', data: 'German Shepherd'},{label: 'Cat', data: 'Long Hair'},{label: 'Human', data: 'Kevin'}]"></pui-table-row>
+      <pui-table-row :cells="[{label: 'Dog', data: 'Poodle'},{label: 'Cat', data: 'Maine Coon'},{label: 'Human', data: 'Beth'}]"></pui-table-row>
     </pui-table>
     <pui-table :headers="['Dog', 'Cat', 'Human']" hoverOff>
       <pui-table-row :cells="[{label: 'Dog', data: 'Pit Bull'},{label: 'Cat', data: 'Short Hair'},{label: 'Human', data: 'Austin'}]"></pui-table-row>
+      <pui-table-row :cells="[{label: 'Dog', data: 'German Shepherd'},{label: 'Cat', data: 'Long Hair'},{label: 'Human', data: 'Kevin'}]"></pui-table-row>
+      <pui-table-row :cells="[{label: 'Dog', data: 'Poodle'},{label: 'Cat', data: 'Maine Coon'},{label: 'Human', data: 'Beth'}]"></pui-table-row>
     </pui-table>
     <pui-table :headers="['Dog', 'Cat', 'Human']" unresponsive>
       <pui-table-row :cells="[{data: 'Pit Bull'},{data: 'Short Hair'},{data: 'Austin'}]"></pui-table-row>
+      <pui-table-row :cells="[{data: 'German Shepherd'},{data: 'Long Hair'},{data: 'Kevin'}]"></pui-table-row>
+      <pui-table-row :cells="[{data: 'Poodle'},{data: 'Maine Coon'},{data: 'Beth'}]"></pui-table-row>
+    </pui-table>
+    <pui-table :headers="['', 'Option One', 'Option Two']" unresponsive>
+      <pui-table-row :cells="[{data: 'Desc'},{data: 'Pork Buns'},{data: 'Pork Buns'}]"></pui-table-row>
+      <pui-table-row :cells="[{data: 'Price'},{data: '$5.00'},{data: '$9.00'}]"></pui-table-row>
+      <pui-table-row :cells="[{data: 'Quanity'},{data: '5'},{data: '2'}]"></pui-table-row>
     </pui-table>
   </div>
 </template>
