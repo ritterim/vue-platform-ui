@@ -16,6 +16,12 @@ import FigureHover from './components/FigureHover.vue';
 import Menu from './components/Menu.vue';
 import MenuDropdown from './components/MenuDropdown.vue';
 import Blockquote from './components/Blockquote.vue';
+import Form from './components/Form.vue';
+import FormInput from './components/FormInput.vue';
+import FormCheckbox from './components/FormCheckbox.vue';
+import FormCheckboxOption from './components/FormCheckboxOption.vue';
+import FormInputFancy from './components/FormInputFancy.vue';
+import FormButtonGroup from './components/FormButtonGroup.vue';
 
 export default {
   install: app => {
@@ -37,5 +43,11 @@ export default {
     app.component('pui-menu', Menu);
     app.component('pui-menu-dropdown', MenuDropdown);
     app.component('pui-blockquote', Blockquote);
+    app.component('pui-form', Form);
+    app.component('pui-form-input', FormInput);
+    app.component('pui-form-checkbox', FormCheckbox);
+    app.component('pui-form-checkbox-option', FormCheckboxOption);
+    app.component('pui-form-input-fancy', FormInputFancy);
+    app.component('pui-form-button-group', FormButtonGroup);
   }
 };

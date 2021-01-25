@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-4">
+  <div class="mx-4 py-4">
     <!-- Accordion -->
     <div class="block-container m-3">
       <div class="block laptop-up-6">
@@ -201,7 +201,7 @@
       <pui-drawer-content> My Drawer Content </pui-drawer-content>
     </pui-drawer>
 
-    <div class="block-container m-2">
+    <div class="block-container m-4">
       <div class="block laptop-up-4">
         <h2 class="mt-6">Figure Hover</h2>
         <pui-figure-hover 
@@ -210,6 +210,51 @@
         ></pui-figure-hover>
       </div>
     </div>
+
+    <pui-form action="">
+      <pui-form-input id="first-name" type="text" placeholder="First Name">First Name</pui-form-input>
+      <pui-form-input id="last-name" type="text" placeholder="Last Name">Last Name</pui-form-input>
+    </pui-form>
+    <pui-form action="" bordered class="laptop-up-4 p-2">
+      <pui-form-input id="first-name" type="text" placeholder="First Name">First Name</pui-form-input>
+      <pui-form-input id="last-name" type="text" placeholder="Last Name">Last Name</pui-form-input>
+      <pui-form-input id="dob" type="date">Birthday</pui-form-input>
+      <pui-form-input id="zipcode" type="tel" placeholder="e.g.90012">ZIP Code</pui-form-input>
+    </pui-form>
+    <pui-form action="" rounded class="laptop-up-4 p-2">
+      <pui-form-input id="first-name" type="text" placeholder="First Name">First Name</pui-form-input>
+      <pui-form-input id="last-name" type="text" placeholder="Last Name">Last Name</pui-form-input>
+      <pui-form-input id="dob" type="date">Birthday</pui-form-input>
+      <pui-form-input id="zipcode" type="tel" placeholder="e.g.90012">ZIP Code</pui-form-input>
+    </pui-form>
+    <pui-form action="" class="laptop-up-4 p-2">
+      <pui-form-input id="first-name" type="text" placeholder="First Name">First Name</pui-form-input>
+      <pui-form-input id="last-name" type="text" placeholder="Last Name" error>Last Name</pui-form-input>
+      <pui-form-input id="dob" type="date">Birthday</pui-form-input>
+      <pui-form-input id="zipcode" type="tel" placeholder="e.g.90012">ZIP Code</pui-form-input>
+      <pui-form-checkbox header="Error on entire fieldset" error>
+        <pui-form-checkbox-option id="this">This</pui-form-checkbox-option>
+        <pui-form-checkbox-option id="that">That</pui-form-checkbox-option>
+      </pui-form-checkbox>
+      <pui-form-checkbox header="Error on individual input">
+        <pui-form-checkbox-option id="this-one" error>This One</pui-form-checkbox-option>
+        <pui-form-checkbox-option id="that-one">That One</pui-form-checkbox-option>
+      </pui-form-checkbox>
+    </pui-form>
+    <pui-form action="" class="my-3">
+      <pui-form-input-fancy id="first-name" type="text" placeholder="First Name" class="form__field--fancy">First Name</pui-form-input-fancy>
+      <pui-form-input-fancy id="last-name" type="text" placeholder="Last Name">Last Name</pui-form-input-fancy>
+      <pui-form-input-fancy id="dob" type="date">Birthday</pui-form-input-fancy>
+      <pui-form-input-fancy id="zipcode" type="tel" placeholder="e.g.90012">ZIP Code</pui-form-input-fancy>
+    </pui-form>
+    <pui-form action="" class="laptop-up-4 p-2">
+      <pui-form-input id="dob" type="date" icon="pi-calendar">Birthday</pui-form-input>
+      <pui-form-input id="date" type="date" icon="pi-calendar" iconSide="right">Date</pui-form-input>
+      <pui-form-input id="time" type="time" placeholder="e.g.90012" icon="pi-clock" iconSide="right">Your Time</pui-form-input>
+      <pui-form-button-group>
+        <pui-button size="large">Submit</pui-button>
+      </pui-form-button-group>
+    </pui-form>
   </div>
 </template>
 
