@@ -12,6 +12,7 @@ import Drawer from './components/Drawer.vue';
 import DrawerHeader from './components/DrawerHeader.vue';
 import DrawerContent from './components/DrawerContent.vue';
 import Button from './components/Button.vue';
+import FigureHover from './components/FigureHover.vue';
 import Menu from './components/Menu.vue';
 import MenuDropdown from './components/MenuDropdown.vue';
 import Blockquote from './components/Blockquote.vue';
@@ -32,6 +33,7 @@ export default {
     app.component('pui-drawer', Drawer);
     app.component('pui-drawer-header', DrawerHeader);
     app.component('pui-drawer-content', DrawerContent);
+    app.component('pui-figure-hover', FigureHover);
     app.component('pui-menu', Menu);
     app.component('pui-menu-dropdown', MenuDropdown);
     app.component('pui-blockquote', Blockquote);

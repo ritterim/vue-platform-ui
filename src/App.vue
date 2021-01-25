@@ -25,8 +25,8 @@
     <div class="block-container m-2">
       <div class="block laptop-up-3">
         <h2 class="mt-6">Button</h2>
-        <pui-button>My Button</pui-button>
-        <pui-button size="large">My Large Button</pui-button>
+        <pui-button @click="buttonClick">My Button</pui-button>
+        <pui-button @click="buttonClick" size="large">My Large Button</pui-button>
       </div>
     </div>
 
@@ -34,7 +34,9 @@
     <div class="block-container m-2">
       <div class="block laptop-up-3">
         <h2 class="mt-6">Cards</h2>
-        <pui-card>Simple card! </pui-card>
+        <pui-card>
+          Simple card!
+        </pui-card>
       </div>
     </div>
 
@@ -198,6 +200,16 @@
       </pui-drawer-header>
       <pui-drawer-content> My Drawer Content </pui-drawer-content>
     </pui-drawer>
+
+    <div class="block-container m-2">
+      <div class="block laptop-up-4">
+        <h2 class="mt-6">Figure Hover</h2>
+        <pui-figure-hover 
+          src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+          caption="This is my caption!"
+        ></pui-figure-hover>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -214,6 +226,9 @@ export default {
     };
   },
   methods: {
+    buttonClick(){
+      console.log('clicked!');
+    },
     toggleAccordion() {
       this.accordionOpen = !this.accordionOpen;
     },
