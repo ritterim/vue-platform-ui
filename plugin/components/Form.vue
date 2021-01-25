@@ -13,6 +13,9 @@ export default {
     },
     rounded: {
       type: Boolean
+    },
+    action: {
+      type: String
     }
   }
 };
