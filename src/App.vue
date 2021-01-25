@@ -119,6 +119,16 @@
   </div>
   <div class="p-5">
     <pui-table :headers="['Dog', 'Cat', 'Human']">
+      <pui-table-row :cells="[{label: 'Dog', data: 'Pit Bull'},{label: 'Cat', data: 'Short Hair'},{label: 'Human', data: 'Austin'}]"></pui-table-row>
+    </pui-table>
+    <pui-table :headers="['Dog', 'Cat', 'Human']" unresponsive>
+      <pui-table-row :cells="[{label: 'Dog', data: 'Pit Bull'},{label: 'Cat', data: 'Short Hair'},{label: 'Human', data: 'Austin'}]"></pui-table-row>
+    </pui-table>
+    <pui-table :headers="['Dog', 'Cat', 'Human']" hoverOff>
+      <pui-table-row :cells="[{label: 'Dog', data: 'Pit Bull'},{label: 'Cat', data: 'Short Hair'},{label: 'Human', data: 'Austin'}]"></pui-table-row>
+    </pui-table>
+    <pui-table :headers="['Dog', 'Cat', 'Human']" unresponsive>
+      <pui-table-row :cells="[{data: 'Pit Bull'},{data: 'Short Hair'},{data: 'Austin'}]"></pui-table-row>
     </pui-table>
   </div>
 </template>

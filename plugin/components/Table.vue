@@ -1,12 +1,15 @@
 <template>
-  <table class="table">
+  <table class="table" :class="[{'table--no-hover': hoverOff}, {unresponsive: unresponsive}]">
     <thead>
       <tr>
         <th v-for="header in headers" :v-id="header" :key="header">
-          {{header}}
+          {{ header }}
         </th>
       </tr>
     </thead>
+    <tbody>
+      <slot></slot>
+    </tbody>
   </table>
 </template>
 
@@ -17,8 +20,12 @@ export default {
     unresponsive: {
       type: Boolean
     },
+    hoverOff: {
+      type: Boolean
+    },
     headers: {
-      type: Array
+      type: Array,
+      required: true
     }
   }
 };
