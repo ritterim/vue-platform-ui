@@ -309,6 +309,37 @@
       <pui-form-textarea id="readonly-2" readonly value="This is a readonly textarea. When you select edit, the readonly attribute will be removed." class="block-9 readonly-text"></pui-form-textarea>
       <pui-button class="ml-2" @click="toggleReadOnlyText($event)">Edit</pui-button>
     </pui-form>
+    <pui-form action="" class="laptop-up-4 p-2">
+      <pui-form-input id="first-name" type="text" placeholder="First Name">First Name</pui-form-input>
+      <pui-form-input id="last-name" type="text" placeholder="Last Name">Last Name</pui-form-input>
+      <pui-form-input id="dob" type="date">Birthday</pui-form-input>
+      <pui-form-input id="zipcode" type="tel" placeholder="e.g.90012">ZIP Code</pui-form-input>
+      <pui-form-fieldset header="Choose">
+        <pui-form-checkbox id="choose-1">This One</pui-form-checkbox>
+        <pui-form-checkbox id="choose-2">That One</pui-form-checkbox>
+      </pui-form-fieldset>
+      <pui-form-fieldset header="Gender">
+        <pui-form-radio id="male" name="radio">Male</pui-form-radio>
+        <pui-form-radio id="female" name="radio">Female</pui-form-radio>
+      </pui-form-fieldset>
+      <pui-form-select header="Option" name="Option Select" id="Option">
+        <pui-form-select-option value="option1">Option 1</pui-form-select-option>
+        <pui-form-select-option value="option2">Option 2</pui-form-select-option>
+        <pui-form-select-option value="option3">Option 3</pui-form-select-option>
+        <pui-form-select-option value="option4">Option 4</pui-form-select-option>
+        <pui-form-select-option value="option5">Option 5</pui-form-select-option>
+        <pui-form-select-option value="option6">Option 6</pui-form-select-option>
+      </pui-form-select>
+      <pui-form-toggle header="Are You">
+        <pui-form-toggle-option id="Tall-1" name="height" checked>Tall</pui-form-toggle-option>
+        <pui-form-toggle-option id="Short-1" name="height">Short</pui-form-toggle-option>
+      </pui-form-toggle>
+      <pui-form-input id="date" type="date" icon="pi-calendar">Date</pui-form-input>
+      <pui-form-input id="date" type="time">Your Time</pui-form-input>
+      <pui-form-button-group>
+        <pui-button size="large">Submit</pui-button>
+      </pui-form-button-group>
+    </pui-form>
   </div>
 </template>
 
