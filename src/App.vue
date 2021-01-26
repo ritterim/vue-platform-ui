@@ -291,6 +291,24 @@
         <pui-form-select-option value="10:30 AM">10:30 AM</pui-form-select-option>
       </pui-form-select>
     </pui-form>
+    <pui-form action="" class="p-2 laptop-up-3">
+      <pui-form-toggle header="Are You">
+        <pui-form-toggle-option id="Tall-2" name="height" checked>Tall</pui-form-toggle-option>
+        <pui-form-toggle-option id="Short-2" name="height">Short</pui-form-toggle-option>
+      </pui-form-toggle>
+    </pui-form>
+    <pui-form action="" class="p-2 laptop-up-3">
+      <pui-form-toggle header="Are You" disabled>
+        <pui-form-toggle-option id="Tall-2" name="height" checked>Tall</pui-form-toggle-option>
+        <pui-form-toggle-option id="Short-2" name="height">Short</pui-form-toggle-option>
+      </pui-form-toggle>
+    </pui-form>
+    <pui-form action="">
+      <pui-form-input id="readonly-1" type="text" value="This is a readonly input. When you select edit, the readonly attribute will be removed." readonly class="block-9 readonly-input"></pui-form-input>
+      <pui-button class="ml-2" @click="toggleReadOnly($event)">Edit</pui-button>
+      <pui-form-textarea id="readonly-2" readonly value="This is a readonly textarea. When you select edit, the readonly attribute will be removed." class="block-9 readonly-text"></pui-form-textarea>
+      <pui-button class="ml-2" @click="toggleReadOnlyText($event)">Edit</pui-button>
+    </pui-form>
   </div>
 </template>
 
@@ -325,6 +343,14 @@ export default {
     toggleRightDrawer() {
       this.drawerRightOpen = !this.drawerRightOpen;
     },
+    toggleReadOnly(e) {
+      e.preventDefault();
+      document.querySelector('.readonly-input label input').removeAttribute('readonly');
+    },
+    toggleReadOnlyText(e) {
+      e.preventDefault();
+      document.querySelector('.readonly-text label textarea').removeAttribute('readonly');
+    }
   },
 };
 </script>

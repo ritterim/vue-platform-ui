@@ -1,7 +1,7 @@
 <template>
   <div class="block">
     <label :for="id" class="form__field" :class="[{error: error}, iconSideClass]"><slot></slot>
-      <input :id="id" :type="type" :placeholder="placeholder" :pattern="pattern">
+      <input :id="id" :type="type" :placeholder="placeholder" :pattern="pattern" :class="{readonly: readonly}" :readonly="readonly" :value="value">
       <i v-if="icon" :class="icon"></i>
     </label>
   </div>
@@ -34,6 +34,12 @@ export default {
       validator: function (value) {
         return ['left', 'right'].indexOf(value) !== -1;
       }
+    },
+    readonly: {
+      type: Boolean
+    },
+    value: {
+      type: String
     }
   },
   computed: {
