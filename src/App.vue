@@ -232,14 +232,14 @@
       <pui-form-input id="last-name" type="text" placeholder="Last Name" error>Last Name</pui-form-input>
       <pui-form-input id="dob" type="date">Birthday</pui-form-input>
       <pui-form-input id="zipcode" type="tel" placeholder="e.g.90012">ZIP Code</pui-form-input>
-      <pui-form-checkbox header="Error on entire fieldset" error>
-        <pui-form-checkbox-option id="this">This</pui-form-checkbox-option>
-        <pui-form-checkbox-option id="that">That</pui-form-checkbox-option>
-      </pui-form-checkbox>
-      <pui-form-checkbox header="Error on individual input">
-        <pui-form-checkbox-option id="this-one" error>This One</pui-form-checkbox-option>
-        <pui-form-checkbox-option id="that-one">That One</pui-form-checkbox-option>
-      </pui-form-checkbox>
+      <pui-form-fieldset header="Error on entire fieldset" error>
+        <pui-form-checkbox id="this">This</pui-form-checkbox>
+        <pui-form-checkbox id="that">That</pui-form-checkbox>
+      </pui-form-fieldset>
+      <pui-form-fieldset header="Error on individual input">
+        <pui-form-checkbox id="this-one" error>This One</pui-form-checkbox>
+        <pui-form-checkbox id="that-one">That One</pui-form-checkbox>
+      </pui-form-fieldset>
     </pui-form>
     <pui-form action="" class="my-3">
       <pui-form-input-fancy id="first-name" type="text" placeholder="First Name" class="form__field--fancy">First Name</pui-form-input-fancy>
@@ -254,6 +254,14 @@
       <pui-form-button-group>
         <pui-button size="large">Submit</pui-button>
       </pui-form-button-group>
+    </pui-form>
+    <pui-form action="" class="p-2">
+      <pui-form-fieldset header="Choose">
+          <pui-form-checkbox id="option-1">This One</pui-form-checkbox>
+          <pui-form-checkbox id="option-2">That One</pui-form-checkbox>
+          <pui-form-checkbox id="option-3">Or This One</pui-form-checkbox>
+          <pui-form-checkbox id="option-4">Or Even That One</pui-form-checkbox>
+      </pui-form-fieldset>
     </pui-form>
   </div>
 </template>

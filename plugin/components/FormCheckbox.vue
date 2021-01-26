@@ -1,21 +1,18 @@
 <template>
-  <div class="block">
-    <fieldset class="form__field" :class="{error: error}">
-      <legend>
-        {{ header }}
-      </legend>
-      <div class="form__option-group">
-        <slot></slot>
-      </div>
-    </fieldset>
-  </div>
+  <input class="form__checkbox" :class="{error: error}" :id="id" type="checkbox">
+  <label :for="id">
+    <div class="input-icons">
+      <i class="pi-circle pi-lg"></i>
+      <i class="pi-check pi-heavy"></i>
+    </div><slot></slot>
+  </label>
 </template>
 
 <script>
 export default {
   name: 'pui-form-checkbox',
   props: {
-    header: {
+    id: {
       type: String
     },
     error: {

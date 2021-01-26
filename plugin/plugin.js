@@ -18,8 +18,8 @@ import MenuDropdown from './components/MenuDropdown.vue';
 import Blockquote from './components/Blockquote.vue';
 import Form from './components/Form.vue';
 import FormInput from './components/FormInput.vue';
+import FormFieldset from './components/FormFieldset.vue';
 import FormCheckbox from './components/FormCheckbox.vue';
-import FormCheckboxOption from './components/FormCheckboxOption.vue';
 import FormInputFancy from './components/FormInputFancy.vue';
 import FormButtonGroup from './components/FormButtonGroup.vue';
 
@@ -45,8 +45,8 @@ export default {
     app.component('pui-blockquote', Blockquote);
     app.component('pui-form', Form);
     app.component('pui-form-input', FormInput);
+    app.component('pui-form-fieldset', FormFieldset);
     app.component('pui-form-checkbox', FormCheckbox);
-    app.component('pui-form-checkbox-option', FormCheckboxOption);
     app.component('pui-form-input-fancy', FormInputFancy);
     app.component('pui-form-button-group', FormButtonGroup);
   }
