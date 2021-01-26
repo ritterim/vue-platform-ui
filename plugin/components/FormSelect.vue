@@ -1,10 +1,11 @@
 <template>
   <div class="block">
     <label :for="id" class="form__field">{{ header }}
-      <div class="form__select-wrapper">
+      <div class="form__select-wrapper" :class="{time: time}">
         <select :name="name" :id="id">
           <slot></slot>
         </select>
+        <i v-if="time" class="pi-clock"></i>
       </div>
     </label>
   </div>
@@ -22,6 +23,9 @@ export default {
     },
     id: {
       type: String
+    },
+    time: {
+      type: Boolean
     }
   }
 };

@@ -281,6 +281,16 @@
         <pui-form-select-option value="option6">Option 6</pui-form-select-option>
       </pui-form-select>
     </pui-form>
+    <pui-form action="" class="p-2 laptop-up-2">
+      <pui-form-select name="Select a time" id="task-1-time" time>
+        <pui-form-select-option value="8:00 AM">8:00 AM</pui-form-select-option>
+        <pui-form-select-option value="8:30 AM">8:30 AM</pui-form-select-option>
+        <pui-form-select-option value="9:00 AM">9:00 AM</pui-form-select-option>
+        <pui-form-select-option value="9:30 AM">9:30 AM</pui-form-select-option>
+        <pui-form-select-option value="10:00 AM">10:00 AM</pui-form-select-option>
+        <pui-form-select-option value="10:30 AM">10:30 AM</pui-form-select-option>
+      </pui-form-select>
+    </pui-form>
   </div>
 </template>
 
