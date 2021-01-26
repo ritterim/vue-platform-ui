@@ -263,6 +263,14 @@
           <pui-form-checkbox id="option-4">Or Even That One</pui-form-checkbox>
       </pui-form-fieldset>
     </pui-form>
+    <pui-form action="" class="p-2">
+      <pui-form-fieldset header="Pick one">
+          <pui-form-radio id="radio-1" name="radio">Smaller</pui-form-radio>
+          <pui-form-radio id="radio-2" name="radio">Small</pui-form-radio>
+          <pui-form-radio id="radio-3" name="radio">Big</pui-form-radio>
+          <pui-form-radio id="radio-4" name="radio">Bigger</pui-form-radio>
+      </pui-form-fieldset>
+    </pui-form>
   </div>
 </template>
 

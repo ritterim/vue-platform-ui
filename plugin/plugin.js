@@ -20,6 +20,7 @@ import Form from './components/Form.vue';
 import FormInput from './components/FormInput.vue';
 import FormFieldset from './components/FormFieldset.vue';
 import FormCheckbox from './components/FormCheckbox.vue';
+import FormRadio from './components/FormRadio.vue';
 import FormInputFancy from './components/FormInputFancy.vue';
 import FormButtonGroup from './components/FormButtonGroup.vue';
 
@@ -47,6 +48,7 @@ export default {
     app.component('pui-form-input', FormInput);
     app.component('pui-form-fieldset', FormFieldset);
     app.component('pui-form-checkbox', FormCheckbox);
+    app.component('pui-form-radio', FormRadio);
     app.component('pui-form-input-fancy', FormInputFancy);
     app.component('pui-form-button-group', FormButtonGroup);
   }
