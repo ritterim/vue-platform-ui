@@ -321,6 +321,110 @@
       </div>
     </div>
   </div>
+  <div class="p-5">
+    <pui-table :headers="['Dog', 'Cat', 'Human']">
+      <pui-table-row>
+        <pui-table-cell label="Dog">Pit Bull</pui-table-cell>
+        <pui-table-cell label="Cat">Short Hair</pui-table-cell>
+        <pui-table-cell label="Human">Austin</pui-table-cell>
+      </pui-table-row>
+      <pui-table-row>
+        <pui-table-cell label="Dog">German Shepherd</pui-table-cell>
+        <pui-table-cell label="Cat">Long Hair</pui-table-cell>
+        <pui-table-cell label="Human">Kevin</pui-table-cell>
+      </pui-table-row>
+      <pui-table-row>
+        <pui-table-cell label="Dog">Poodle</pui-table-cell>
+        <pui-table-cell label="Cat">Maine Coon</pui-table-cell>
+        <pui-table-cell label="Human">Beth</pui-table-cell>
+      </pui-table-row>
+    </pui-table>
+    <pui-table :headers="['Dog', 'Cat', 'Human']" unresponsive>
+      <pui-table-row>
+        <pui-table-cell label="Dog">Pit Bull</pui-table-cell>
+        <pui-table-cell label="Cat">Short Hair</pui-table-cell>
+        <pui-table-cell label="Human">Austin</pui-table-cell>
+      </pui-table-row>
+      <pui-table-row>
+        <pui-table-cell label="Dog">German Shepherd</pui-table-cell>
+        <pui-table-cell label="Cat">Long Hair</pui-table-cell>
+        <pui-table-cell label="Human">Kevin</pui-table-cell>
+      </pui-table-row>
+      <pui-table-row>
+        <pui-table-cell label="Dog">Poodle</pui-table-cell>
+        <pui-table-cell label="Cat">Maine Coon</pui-table-cell>
+        <pui-table-cell label="Human">Beth</pui-table-cell>
+      </pui-table-row>
+    </pui-table>
+    <pui-table :headers="['Dog', 'Cat', 'Human']" hoverOff>
+      <pui-table-row>
+        <pui-table-cell label="Dog">Pit Bull</pui-table-cell>
+        <pui-table-cell label="Cat">Short Hair</pui-table-cell>
+        <pui-table-cell label="Human">Austin</pui-table-cell>
+      </pui-table-row>
+      <pui-table-row>
+        <pui-table-cell label="Dog">German Shepherd</pui-table-cell>
+        <pui-table-cell label="Cat">Long Hair</pui-table-cell>
+        <pui-table-cell label="Human">Kevin</pui-table-cell>
+      </pui-table-row>
+      <pui-table-row>
+        <pui-table-cell label="Dog">Poodle</pui-table-cell>
+        <pui-table-cell label="Cat">Maine Coon</pui-table-cell>
+        <pui-table-cell label="Human">Beth</pui-table-cell>
+      </pui-table-row>
+    </pui-table>
+    <pui-table :headers="['Dog', 'Cat', 'Human']" unresponsive>
+      <pui-table-row>
+        <pui-table-cell>Pit Bull</pui-table-cell>
+        <pui-table-cell>Short Hair</pui-table-cell>
+        <pui-table-cell>Austin</pui-table-cell>
+      </pui-table-row>
+      <pui-table-row>
+        <pui-table-cell>German Shepherd</pui-table-cell>
+        <pui-table-cell>Long Hair</pui-table-cell>
+        <pui-table-cell>Kevin</pui-table-cell>
+      </pui-table-row>
+      <pui-table-row>
+        <pui-table-cell>Poodle</pui-table-cell>
+        <pui-table-cell>Maine Coon</pui-table-cell>
+        <pui-table-cell>Beth</pui-table-cell>
+      </pui-table-row>
+    </pui-table>
+    <pui-table :headers="['', 'Option One', 'Option Two']" unresponsive>
+      <pui-table-row>
+        <pui-table-cell>Desc</pui-table-cell>
+        <pui-table-cell>Pork Buns</pui-table-cell>
+        <pui-table-cell>Pork Buns</pui-table-cell>
+      </pui-table-row>
+      <pui-table-row>
+        <pui-table-cell>Price</pui-table-cell>
+        <pui-table-cell>$5.00</pui-table-cell>
+        <pui-table-cell>$9.00</pui-table-cell>
+      </pui-table-row>
+      <pui-table-row>
+        <pui-table-cell>Quanity</pui-table-cell>
+        <pui-table-cell>5</pui-table-cell>
+        <pui-table-cell>2</pui-table-cell>
+      </pui-table-row>
+    </pui-table>
+    <pui-table :headers="['Dog', 'Cat', 'Human']">
+      <pui-table-row>
+        <pui-table-cell label="Dog"><img src="./assets/dog1.jpg" alt="dog" style="height: 200px"></pui-table-cell>
+        <pui-table-cell label="Cat"><img src="./assets/yuumi.jpg" alt="cat" style="height: 200px"></pui-table-cell>
+        <pui-table-cell label="Human"><i class='pi-user-solid pi-xxl'></i></pui-table-cell>
+      </pui-table-row>
+      <pui-table-row>
+        <pui-table-cell label="Dog"><img src="./assets/dog2.jpg" alt="dog" style="height: 200px"></pui-table-cell>
+        <pui-table-cell label="Cat"><i class='pi-twitter pi-xxl'></i></pui-table-cell>
+        <pui-table-cell label="Human"><i class='pi-ritter pi-xxl'></i></pui-table-cell>
+      </pui-table-row>
+      <pui-table-row>
+        <pui-table-cell label="Dog"><i class='pi-dollar pi-xxl'></i></pui-table-cell>
+        <pui-table-cell label="Cat"><img src="./assets/momo.jpg" alt="cat" style="height: 200px"></pui-table-cell>
+        <pui-table-cell label="Human"><i class='pi-bank pi-xxl'></i></pui-table-cell>
+      </pui-table-row>
+    </pui-table>
+  </div>
 </template>
 
 <script>

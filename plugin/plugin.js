@@ -18,6 +18,9 @@ import MenuDropdown from './components/MenuDropdown.vue';
 import Tabs from './components/Tabs.vue';
 import Tab from './components/Tab.vue';
 import Blockquote from './components/Blockquote.vue';
+import Table from './components/Table.vue';
+import TableRow from './components/TableRow.vue';
+import TableCell from './components/TableCell.vue';
 
 export default {
   install: app => {
@@ -41,5 +44,8 @@ export default {
     app.component('pui-tabs', Tabs);
     app.component('pui-tab', Tab);
     app.component('pui-blockquote', Blockquote);
+    app.component('pui-table', Table);
+    app.component('pui-table-row', TableRow);
+    app.component('pui-table-cell', TableCell);
   }
 };
