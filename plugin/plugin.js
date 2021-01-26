@@ -15,6 +15,8 @@ import Button from './components/Button.vue';
 import FigureHover from './components/FigureHover.vue';
 import Menu from './components/Menu.vue';
 import MenuDropdown from './components/MenuDropdown.vue';
+import Tabs from './components/Tabs.vue';
+import Tab from './components/Tab.vue';
 import Blockquote from './components/Blockquote.vue';
 
 export default {
@@ -36,6 +38,8 @@ export default {
     app.component('pui-figure-hover', FigureHover);
     app.component('pui-menu', Menu);
     app.component('pui-menu-dropdown', MenuDropdown);
+    app.component('pui-tabs', Tabs);
+    app.component('pui-tab', Tab);
     app.component('pui-blockquote', Blockquote);
   }
 };
