@@ -1,7 +1,7 @@
 <template>
   <div class="block">
     <fieldset class="form__field" :class="{error: error}">
-      <legend>
+      <legend v-if="header">
         {{ header }}
       </legend>
       <div class="form__option-group">

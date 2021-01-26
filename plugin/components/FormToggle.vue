@@ -1,7 +1,7 @@
 <template>
   <div class="block">
     <fieldset class="form__field" :disabled="disabled">
-      <legend>
+      <legend v-if="header">
         {{ header }}
       </legend>
       <div class="toggle">
@@ -20,15 +20,6 @@ export default {
     },
     disabled: {
       type: Boolean
-    },
-    name: {
-      type: String
-    },
-    firstOption: {
-      type: String
-    },
-    secondOption: {
-      type: String
     }
   }
 };

@@ -242,7 +242,7 @@
       </pui-form-fieldset>
     </pui-form>
     <pui-form action="" class="my-3">
-      <pui-form-input-fancy id="first-name" type="text" placeholder="First Name" class="form__field--fancy">First Name</pui-form-input-fancy>
+      <pui-form-input-fancy id="first-name" type="text" placeholder="First Name">First Name</pui-form-input-fancy>
       <pui-form-input-fancy id="last-name" type="text" placeholder="Last Name">Last Name</pui-form-input-fancy>
       <pui-form-input-fancy id="dob" type="date">Birthday</pui-form-input-fancy>
       <pui-form-input-fancy id="zipcode" type="tel" placeholder="e.g.90012">ZIP Code</pui-form-input-fancy>
