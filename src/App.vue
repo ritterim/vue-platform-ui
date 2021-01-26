@@ -257,19 +257,29 @@
     </pui-form>
     <pui-form action="" class="p-2">
       <pui-form-fieldset header="Choose">
-          <pui-form-checkbox id="option-1">This One</pui-form-checkbox>
-          <pui-form-checkbox id="option-2">That One</pui-form-checkbox>
-          <pui-form-checkbox id="option-3">Or This One</pui-form-checkbox>
-          <pui-form-checkbox id="option-4">Or Even That One</pui-form-checkbox>
+        <pui-form-checkbox id="option-1">This One</pui-form-checkbox>
+        <pui-form-checkbox id="option-2">That One</pui-form-checkbox>
+        <pui-form-checkbox id="option-3">Or This One</pui-form-checkbox>
+        <pui-form-checkbox id="option-4">Or Even That One</pui-form-checkbox>
       </pui-form-fieldset>
     </pui-form>
     <pui-form action="" class="p-2">
       <pui-form-fieldset header="Pick one">
-          <pui-form-radio id="radio-1" name="radio">Smaller</pui-form-radio>
-          <pui-form-radio id="radio-2" name="radio">Small</pui-form-radio>
-          <pui-form-radio id="radio-3" name="radio">Big</pui-form-radio>
-          <pui-form-radio id="radio-4" name="radio">Bigger</pui-form-radio>
+        <pui-form-radio id="radio-1" name="radio">Smaller</pui-form-radio>
+        <pui-form-radio id="radio-2" name="radio">Small</pui-form-radio>
+        <pui-form-radio id="radio-3" name="radio">Big</pui-form-radio>
+        <pui-form-radio id="radio-4" name="radio">Bigger</pui-form-radio>
       </pui-form-fieldset>
+    </pui-form>
+    <pui-form action="" class="p-2 laptop-up-2">
+      <pui-form-select header="Option" name="Option Select" id="Option">
+        <pui-form-select-option value="option1">Option 1</pui-form-select-option>
+        <pui-form-select-option value="option2">Option 2</pui-form-select-option>
+        <pui-form-select-option value="option3">Option 3</pui-form-select-option>
+        <pui-form-select-option value="option4">Option 4</pui-form-select-option>
+        <pui-form-select-option value="option5">Option 5</pui-form-select-option>
+        <pui-form-select-option value="option6">Option 6</pui-form-select-option>
+      </pui-form-select>
     </pui-form>
   </div>
 </template>

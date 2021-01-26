@@ -23,6 +23,8 @@ import FormCheckbox from './components/FormCheckbox.vue';
 import FormRadio from './components/FormRadio.vue';
 import FormInputFancy from './components/FormInputFancy.vue';
 import FormButtonGroup from './components/FormButtonGroup.vue';
+import FormSelect from './components/FormSelect.vue';
+import FormSelectOption from './components/FormSelectOption.vue';
 
 export default {
   install: app => {
@@ -51,5 +53,7 @@ export default {
     app.component('pui-form-radio', FormRadio);
     app.component('pui-form-input-fancy', FormInputFancy);
     app.component('pui-form-button-group', FormButtonGroup);
+    app.component('pui-form-select', FormSelect);
+    app.component('pui-form-select-option', FormSelectOption);
   }
 };
