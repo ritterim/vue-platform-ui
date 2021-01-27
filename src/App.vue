@@ -148,7 +148,7 @@
       <a class="site-menu__item">Item 3</a>
     </pui-menu>
   </div>
-  <div class="mt-3">
+  <div class="p-5">
     <pui-blockquote>
       Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured.
     </pui-blockquote>
@@ -433,9 +433,20 @@
       </pui-form-toggle>
     </pui-form>
     <pui-form action="">
-      <pui-form-input id="readonly-1" type="text" value="This is a readonly input. When you select edit, the readonly attribute will be removed." readonly class="block-9 readonly-input"></pui-form-input>
+      <pui-form-input 
+        id="readonly-1" 
+        type="text" 
+        value="This is a readonly input. When you select edit, the readonly attribute will be removed." 
+        readonly 
+        class="block-9 readonly-input">
+      </pui-form-input>
       <pui-button class="ml-2" @click="toggleReadOnly($event)">Edit</pui-button>
-      <pui-form-textarea id="readonly-2" readonly value="This is a readonly textarea. When you select edit, the readonly attribute will be removed." class="block-9 readonly-text"></pui-form-textarea>
+      <pui-form-textarea 
+        id="readonly-2"
+        value="This is a readonly textarea. When you select edit, the readonly attribute will be removed."
+        readonly
+        class="block-9 readonly-text">
+      </pui-form-textarea>
       <pui-button class="ml-2" @click="toggleReadOnlyText($event)">Edit</pui-button>
     </pui-form>
     <pui-form action="" class="laptop-up-4 p-2">
