@@ -13,7 +13,8 @@ export default {
   name: 'pui-form-checkbox',
   props: {
     id: {
-      type: String
+      type: String,
+      required: true
     },
     error: {
       type: Boolean

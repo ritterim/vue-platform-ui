@@ -1,6 +1,11 @@
 <template>
   <div class="block form__field form__field--fancy">
-    <input :id="id" :type="type" required :placeholder="placeholder" :pattern="pattern">
+    <input 
+      :id="id" 
+      :type="type"  
+      :placeholder="placeholder" 
+      :pattern="pattern"
+      required>
     <label :for="id">
       <slot></slot>
     </label>
@@ -12,10 +17,15 @@ export default {
   name: 'pui-form-input-fancy',
   props: {
     id: {
-      type: String
+      type: String,
+      required: true
     },
     type: {
-      type: String
+      type: String,
+      validator: function (value) {
+        return ['text', 'search', 'date', 'email', 'textarea', 'tel', 'password', 'number', 'time', 'url', 'datetime-local', 'month', 'week'].indexOf(value) !== -1;
+      },
+      default: 'text'
     },
     placeholder: {
       type: String

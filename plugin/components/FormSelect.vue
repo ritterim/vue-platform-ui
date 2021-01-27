@@ -19,10 +19,12 @@ export default {
       type: String
     },
     name: {
-      type: String
+      type: String,
+      required: true
     },
     id: {
-      type: String
+      type: String,
+      required: true
     },
     time: {
       type: Boolean

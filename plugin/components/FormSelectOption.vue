@@ -7,7 +7,8 @@ export default {
   name: 'pui-form-select-option',
   props: {
     value: {
-      type: String
+      type: String,
+      required: true
     }
   }
 };

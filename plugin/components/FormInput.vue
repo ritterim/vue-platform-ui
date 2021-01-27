@@ -1,7 +1,14 @@
 <template>
   <div class="block">
     <label :for="id" class="form__field" :class="[{error: error}, iconSideClass]"><slot></slot>
-      <input :id="id" :type="type" :placeholder="placeholder" :pattern="pattern" :class="{readonly: readonly}" :readonly="readonly" :value="value">
+      <input 
+        :id="id" 
+        :type="type" 
+        :placeholder="placeholder" 
+        :pattern="pattern" 
+        :class="{readonly: readonly}" 
+        :readonly="readonly" 
+        :value="value">
       <i v-if="icon" :class="icon"></i>
     </label>
   </div>
@@ -12,10 +19,15 @@ export default {
   name: 'pui-form-input',
   props: {
     id: {
-      type: String
+      type: String,
+      required: true
     },
     type: {
-      type: String
+      type: String,
+      validator: function (value) {
+        return ['text', 'search', 'date', 'email', 'textarea', 'tel', 'password', 'number', 'time', 'url', 'datetime-local', 'month', 'week'].indexOf(value) !== -1;
+      },
+      default: 'text'
     },
     placeholder: {
       type: String

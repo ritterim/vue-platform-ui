@@ -1,5 +1,9 @@
 <template>
-  <input :id="id" type="radio" :name="name" :checked="checked">
+  <input 
+    :id="id"
+    :name="name"
+    :checked="checked"
+    type="radio">
   <label :for="id">
     <i class="pi-check pi-heavy"></i><slot></slot>
   </label>
@@ -10,10 +14,12 @@ export default {
   name: 'pui-form-toggle-option',
   props: {
     name: {
-      type: String
+      type: String,
+      required: true
     },
     id: {
-      type: String
+      type: String,
+      required: true
     },
     checked: {
       type: Boolean

@@ -15,7 +15,8 @@ export default {
       type: Boolean
     },
     action: {
-      type: String
+      type: String,
+      required: true
     }
   }
 };

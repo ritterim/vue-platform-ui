@@ -1,5 +1,9 @@
 <template>
-  <input :class="{error: error}" :id="id" type="radio" :name="name">
+  <input 
+    :class="{error: error}" 
+    :id="id" 
+    :name="name"
+    type="radio">
   <label :for="id">
     <div class="input-icons">
       <i class="pi-circle pi-lg"></i>
@@ -13,13 +17,15 @@ export default {
   name: 'pui-form-radio',
   props: {
     id: {
-      type: String
+      type: String,
+      required: true
     },
     error: {
       type: Boolean
     },
     name: {
-      type: String
+      type: String,
+      required: true
     }
   }
 };
