@@ -1,5 +1,5 @@
 <template>
-  <option :value="value"><slot></slot></option>
+  <option :value="value" :selected="selected"><slot></slot></option>
 </template>
 
 <script>
@@ -9,6 +9,9 @@ export default {
     value: {
       type: String,
       required: true
+    },
+    selected: {
+      type: Boolean
     }
   }
 };

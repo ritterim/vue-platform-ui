@@ -8,7 +8,8 @@
         :pattern="pattern" 
         :class="{readonly: readonly}" 
         :readonly="readonly" 
-        :value="value">
+        :value="value"
+      >
       <i v-if="icon" :class="icon"></i>
     </label>
   </div>

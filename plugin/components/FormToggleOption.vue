@@ -3,7 +3,8 @@
     :id="id"
     :name="name"
     :checked="checked"
-    type="radio">
+    type="radio"
+  >
   <label :for="id">
     <i class="pi-check pi-heavy"></i><slot></slot>
   </label>

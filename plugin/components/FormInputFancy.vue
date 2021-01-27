@@ -5,7 +5,8 @@
       :type="type"  
       :placeholder="placeholder" 
       :pattern="pattern"
-      required>
+      required
+    >
     <label :for="id">
       <slot></slot>
     </label>

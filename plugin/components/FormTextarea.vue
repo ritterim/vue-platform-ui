@@ -7,7 +7,8 @@
         :class="{readonly: readonly}" 
         :readonly="readonly" 
         :placeholder="placeholder" 
-        :value="value"></textarea>
+        :value="value">
+      </textarea>
     </label>
   </div>
 </template>

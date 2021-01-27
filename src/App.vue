@@ -227,11 +227,17 @@
       <pui-form-input id="dob" type="date">Birthday</pui-form-input>
       <pui-form-input id="zipcode" type="tel" placeholder="e.g.90012">ZIP Code</pui-form-input>
     </pui-form>
-    <pui-form action="" class="laptop-up-4 p-2">
+    <pui-form action="" class="laptop-up-4 desktop-up-6 p-2">
       <pui-form-input id="first-name" type="text" placeholder="First Name">First Name</pui-form-input>
       <pui-form-input id="last-name" type="text" placeholder="Last Name" error>Last Name</pui-form-input>
       <pui-form-input id="dob" type="date">Birthday</pui-form-input>
-      <pui-form-input id="zipcode" type="tel" placeholder="e.g.90012" pattern="^\d{5,6}(?:[-\s]\d{4})?$">ZIP Code</pui-form-input>
+      <pui-form-input 
+        id="zipcode" 
+        type="tel" 
+        placeholder="e.g.90012" 
+        pattern="^\d{5,6}(?:[-\s]\d{4})?$">
+        ZIP Code
+      </pui-form-input>
       <pui-form-fieldset header="Error on entire fieldset" error>
         <pui-form-checkbox id="this">This</pui-form-checkbox>
         <pui-form-checkbox id="that">That</pui-form-checkbox>
@@ -249,8 +255,21 @@
     </pui-form>
     <pui-form action="" class="laptop-up-4 p-2">
       <pui-form-input id="dob" type="date" icon="pi-calendar">Birthday</pui-form-input>
-      <pui-form-input id="date" type="date" icon="pi-calendar" iconSide="right">Date</pui-form-input>
-      <pui-form-input id="time" type="time" placeholder="e.g.90012" icon="pi-clock" iconSide="right">Your Time</pui-form-input>
+      <pui-form-input 
+        id="date" 
+        type="date" 
+        icon="pi-calendar" 
+        iconSide="right">
+        Date
+      </pui-form-input>
+      <pui-form-input 
+        id="time" 
+        type="time" 
+        placeholder="e.g.90012" 
+        icon="pi-clock" 
+        iconSide="right">
+        Your Time
+      </pui-form-input>
       <pui-form-button-group>
         <pui-button size="large">Submit</pui-button>
       </pui-form-button-group>

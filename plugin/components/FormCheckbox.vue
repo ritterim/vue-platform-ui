@@ -1,5 +1,10 @@
 <template>
-  <input :class="{error: error}" :id="id" type="checkbox">
+  <input 
+    :class="{error: error}" 
+    :id="id" 
+    :checked="checked"
+    type="checkbox" 
+  >
   <label :for="id">
     <div class="input-icons">
       <i class="pi-circle pi-lg"></i>
@@ -17,6 +22,9 @@ export default {
       required: true
     },
     error: {
+      type: Boolean
+    },
+    checked: {
       type: Boolean
     }
   }

@@ -3,7 +3,9 @@
     :class="{error: error}" 
     :id="id" 
     :name="name"
-    type="radio">
+    :checked="checked"
+    type="radio"
+  >
   <label :for="id">
     <div class="input-icons">
       <i class="pi-circle pi-lg"></i>
@@ -26,6 +28,9 @@ export default {
     name: {
       type: String,
       required: true
+    },
+    checked: {
+      type: Boolean
     }
   }
 };
