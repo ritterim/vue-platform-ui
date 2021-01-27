@@ -15,6 +15,8 @@ import Button from './components/Button.vue';
 import FigureHover from './components/FigureHover.vue';
 import Menu from './components/Menu.vue';
 import MenuDropdown from './components/MenuDropdown.vue';
+import Tabs from './components/Tabs.vue';
+import Tab from './components/Tab.vue';
 import Blockquote from './components/Blockquote.vue';
 import Form from './components/Form.vue';
 import FormInput from './components/FormInput.vue';
@@ -28,6 +30,9 @@ import FormSelectOption from './components/FormSelectOption.vue';
 import FormToggle from './components/FormToggle.vue';
 import FormToggleOption from './components/FormToggleOption.vue';
 import FormTextarea from './components/FormTextarea.vue';
+import Table from './components/Table.vue';
+import TableRow from './components/TableRow.vue';
+import TableCell from './components/TableCell.vue';
 
 export default {
   install: app => {
@@ -48,6 +53,8 @@ export default {
     app.component('pui-figure-hover', FigureHover);
     app.component('pui-menu', Menu);
     app.component('pui-menu-dropdown', MenuDropdown);
+    app.component('pui-tabs', Tabs);
+    app.component('pui-tab', Tab);
     app.component('pui-blockquote', Blockquote);
     app.component('pui-form', Form);
     app.component('pui-form-input', FormInput);
@@ -61,5 +68,8 @@ export default {
     app.component('pui-form-toggle', FormToggle);
     app.component('pui-form-toggle-option', FormToggleOption);
     app.component('pui-form-textarea', FormTextarea);
+    app.component('pui-table', Table);
+    app.component('pui-table-row', TableRow);
+    app.component('pui-table-cell', TableCell);
   }
 };
