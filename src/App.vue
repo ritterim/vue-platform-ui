@@ -320,6 +320,28 @@
         ></pui-figure-hover>
       </div>
     </div>
+
+    <div class="block-container m-2">
+      <div class="block laptop-up-4">
+        <h2 class="mt-6">Image Round</h2>
+        <pui-image-round
+          src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+          size="sm"
+          alt="Purple mountains">
+        </pui-image-round>
+        <pui-image-round
+          src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+          size="md"
+          alt="Purple mountains">
+        </pui-image-round>
+        <pui-image-round
+          src="https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+          size="lg"
+          alt="Purple mountains">
+        </pui-image-round>
+      </div>
+    </div>
+
   </div>
   <div class="p-5">
     <pui-table :headers="['Dog', 'Cat', 'Human']">
