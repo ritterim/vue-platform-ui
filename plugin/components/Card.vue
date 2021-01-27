@@ -1,11 +1,12 @@
-<template>
-  <div class="card">
-    <slot></slot>
-  </div>
-</template>
-
 <script>
 export default {
-  name: 'card',
+  name: 'pui-card',
+  render() {
+    return (
+      <div class="card">
+        {this.$slots.default()}
+      </div>
+    )
+  }
 };
 </script>
