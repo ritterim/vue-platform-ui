@@ -1,12 +1,14 @@
-<template>
-  <button class="button" :class="buttonSize">
-    <slot>Button Label</slot>
-  </button>
-</template>
-
 <script>
 export default {
   name: 'pui-button',
+  render() {
+    const buttonClasses = 'button'.concat(this.buttonSize || '');
+    return (
+      <div className={buttonClasses}>
+        {this.$slots.default()}
+      </div>
+    );
+  },
   props: {
     // Sets the size of the button
     size: {
