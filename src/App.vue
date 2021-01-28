@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-4">
+  <div class="mx-4 py-4">
     <!-- Accordion -->
     <div class="block-container m-3">
       <div class="block laptop-up-6">
@@ -148,7 +148,7 @@
       <a class="site-menu__item">Item 3</a>
     </pui-menu>
   </div>
-  <div class="mt-3">
+  <div class="p-5">
     <pui-blockquote>
       Anger is an acid that can do more harm to the vessel in which it is stored than to anything on which it is poured.
     </pui-blockquote>
@@ -311,7 +311,7 @@
       <pui-drawer-content> My Drawer Content </pui-drawer-content>
     </pui-drawer>
 
-    <div class="block-container m-2">
+    <div class="block-container m-4">
       <div class="block laptop-up-4">
         <h2 class="mt-6">Figure Hover</h2>
         <pui-figure-hover
@@ -320,7 +320,165 @@
         ></pui-figure-hover>
       </div>
     </div>
-
+    <pui-form action="">
+      <pui-form-input id="first-name" type="text" placeholder="First Name">First Name</pui-form-input>
+      <pui-form-input id="last-name" type="text" placeholder="Last Name">Last Name</pui-form-input>
+    </pui-form>
+    <pui-form action="" bordered class="laptop-up-4 p-2">
+      <pui-form-input id="first-name" type="text" placeholder="First Name">First Name</pui-form-input>
+      <pui-form-input id="last-name" type="text" placeholder="Last Name">Last Name</pui-form-input>
+      <pui-form-input id="dob" type="date">Birthday</pui-form-input>
+      <pui-form-input id="zipcode" type="tel" placeholder="e.g.90012">ZIP Code</pui-form-input>
+    </pui-form>
+    <pui-form action="" rounded class="laptop-up-4 p-2">
+      <pui-form-input id="first-name" type="text" placeholder="First Name">First Name</pui-form-input>
+      <pui-form-input id="last-name" type="text" placeholder="Last Name">Last Name</pui-form-input>
+      <pui-form-input id="dob" type="date">Birthday</pui-form-input>
+      <pui-form-input id="zipcode" type="tel" placeholder="e.g.90012">ZIP Code</pui-form-input>
+    </pui-form>
+    <pui-form action="" class="laptop-up-4 desktop-up-6 p-2">
+      <pui-form-input id="first-name" type="text" placeholder="First Name">First Name</pui-form-input>
+      <pui-form-input id="last-name" type="text" placeholder="Last Name" error>Last Name</pui-form-input>
+      <pui-form-input id="dob" type="date">Birthday</pui-form-input>
+      <pui-form-input 
+        id="zipcode" 
+        type="tel" 
+        placeholder="e.g.90012" 
+        pattern="^\d{5,6}(?:[-\s]\d{4})?$">
+        ZIP Code
+      </pui-form-input>
+      <pui-form-fieldset header="Error on entire fieldset" error>
+        <pui-form-checkbox id="this">This</pui-form-checkbox>
+        <pui-form-checkbox id="that">That</pui-form-checkbox>
+      </pui-form-fieldset>
+      <pui-form-fieldset header="Error on individual input">
+        <pui-form-checkbox id="this-one" error>This One</pui-form-checkbox>
+        <pui-form-checkbox id="that-one">That One</pui-form-checkbox>
+      </pui-form-fieldset>
+    </pui-form>
+    <pui-form action="" class="my-3">
+      <pui-form-input-fancy id="first-name" type="text" placeholder="First Name">First Name</pui-form-input-fancy>
+      <pui-form-input-fancy id="last-name" type="text" placeholder="Last Name">Last Name</pui-form-input-fancy>
+      <pui-form-input-fancy id="dob" type="date">Birthday</pui-form-input-fancy>
+      <pui-form-input-fancy id="zipcode" type="tel" placeholder="e.g.90012">ZIP Code</pui-form-input-fancy>
+    </pui-form>
+    <pui-form action="" class="laptop-up-4 p-2">
+      <pui-form-input id="dob" type="date" icon="pi-calendar">Birthday</pui-form-input>
+      <pui-form-input 
+        id="date" 
+        type="date" 
+        icon="pi-calendar" 
+        iconSide="right">
+        Date
+      </pui-form-input>
+      <pui-form-input 
+        id="time" 
+        type="time" 
+        placeholder="e.g.90012" 
+        icon="pi-clock" 
+        iconSide="right">
+        Your Time
+      </pui-form-input>
+      <pui-form-button-group>
+        <pui-button size="large">Submit</pui-button>
+      </pui-form-button-group>
+    </pui-form>
+    <pui-form action="" class="p-2">
+      <pui-form-fieldset header="Choose">
+        <pui-form-checkbox id="option-1">This One</pui-form-checkbox>
+        <pui-form-checkbox id="option-2">That One</pui-form-checkbox>
+        <pui-form-checkbox id="option-3">Or This One</pui-form-checkbox>
+        <pui-form-checkbox id="option-4">Or Even That One</pui-form-checkbox>
+      </pui-form-fieldset>
+    </pui-form>
+    <pui-form action="" class="p-2">
+      <pui-form-fieldset header="Pick one">
+        <pui-form-radio id="radio-1" name="radio">Smaller</pui-form-radio>
+        <pui-form-radio id="radio-2" name="radio">Small</pui-form-radio>
+        <pui-form-radio id="radio-3" name="radio">Big</pui-form-radio>
+        <pui-form-radio id="radio-4" name="radio">Bigger</pui-form-radio>
+      </pui-form-fieldset>
+    </pui-form>
+    <pui-form action="" class="p-2 laptop-up-2">
+      <pui-form-select header="Option" name="Option Select" id="Option">
+        <pui-form-select-option value="option1">Option 1</pui-form-select-option>
+        <pui-form-select-option value="option2">Option 2</pui-form-select-option>
+        <pui-form-select-option value="option3">Option 3</pui-form-select-option>
+        <pui-form-select-option value="option4">Option 4</pui-form-select-option>
+        <pui-form-select-option value="option5">Option 5</pui-form-select-option>
+        <pui-form-select-option value="option6">Option 6</pui-form-select-option>
+      </pui-form-select>
+    </pui-form>
+    <pui-form action="" class="p-2 laptop-up-2">
+      <pui-form-select name="Select a time" id="task-1-time" time>
+        <pui-form-select-option value="8:00 AM">8:00 AM</pui-form-select-option>
+        <pui-form-select-option value="8:30 AM">8:30 AM</pui-form-select-option>
+        <pui-form-select-option value="9:00 AM">9:00 AM</pui-form-select-option>
+        <pui-form-select-option value="9:30 AM">9:30 AM</pui-form-select-option>
+        <pui-form-select-option value="10:00 AM">10:00 AM</pui-form-select-option>
+        <pui-form-select-option value="10:30 AM">10:30 AM</pui-form-select-option>
+      </pui-form-select>
+    </pui-form>
+    <pui-form action="" class="p-2 laptop-up-3">
+      <pui-form-toggle header="Are You">
+        <pui-form-toggle-option id="Tall-2" name="height" checked>Tall</pui-form-toggle-option>
+        <pui-form-toggle-option id="Short-2" name="height">Short</pui-form-toggle-option>
+      </pui-form-toggle>
+    </pui-form>
+    <pui-form action="" class="p-2 laptop-up-3">
+      <pui-form-toggle header="Are You" disabled>
+        <pui-form-toggle-option id="Tall-2" name="height" checked>Tall</pui-form-toggle-option>
+        <pui-form-toggle-option id="Short-2" name="height">Short</pui-form-toggle-option>
+      </pui-form-toggle>
+    </pui-form>
+    <pui-form action="">
+      <pui-form-input 
+        id="readonly-1" 
+        type="text" 
+        value="This is a readonly input. When you select edit, the readonly attribute will be removed." 
+        readonly 
+        class="block-9 readonly-input">
+      </pui-form-input>
+      <pui-button class="ml-2" @click="toggleReadOnly($event)">Edit</pui-button>
+      <pui-form-textarea 
+        id="readonly-2"
+        value="This is a readonly textarea. When you select edit, the readonly attribute will be removed."
+        readonly
+        class="block-9 readonly-text">
+      </pui-form-textarea>
+      <pui-button class="ml-2" @click="toggleReadOnlyText($event)">Edit</pui-button>
+    </pui-form>
+    <pui-form action="" class="laptop-up-4 p-2">
+      <pui-form-input id="first-name" type="text" placeholder="First Name">First Name</pui-form-input>
+      <pui-form-input id="last-name" type="text" placeholder="Last Name">Last Name</pui-form-input>
+      <pui-form-input id="dob" type="date">Birthday</pui-form-input>
+      <pui-form-input id="zipcode" type="tel" placeholder="e.g.90012">ZIP Code</pui-form-input>
+      <pui-form-fieldset header="Choose">
+        <pui-form-checkbox id="choose-1">This One</pui-form-checkbox>
+        <pui-form-checkbox id="choose-2">That One</pui-form-checkbox>
+      </pui-form-fieldset>
+      <pui-form-fieldset header="Gender">
+        <pui-form-radio id="male" name="radio">Male</pui-form-radio>
+        <pui-form-radio id="female" name="radio">Female</pui-form-radio>
+      </pui-form-fieldset>
+      <pui-form-select header="Option" name="Option Select" id="Option">
+        <pui-form-select-option value="option1">Option 1</pui-form-select-option>
+        <pui-form-select-option value="option2">Option 2</pui-form-select-option>
+        <pui-form-select-option value="option3">Option 3</pui-form-select-option>
+        <pui-form-select-option value="option4">Option 4</pui-form-select-option>
+        <pui-form-select-option value="option5">Option 5</pui-form-select-option>
+        <pui-form-select-option value="option6">Option 6</pui-form-select-option>
+      </pui-form-select>
+      <pui-form-toggle header="Are You">
+        <pui-form-toggle-option id="Tall-1" name="height" checked>Tall</pui-form-toggle-option>
+        <pui-form-toggle-option id="Short-1" name="height">Short</pui-form-toggle-option>
+      </pui-form-toggle>
+      <pui-form-input id="date" type="date" icon="pi-calendar">Date</pui-form-input>
+      <pui-form-input id="date" type="time">Your Time</pui-form-input>
+      <pui-form-button-group>
+        <pui-button size="large">Submit</pui-button>
+      </pui-form-button-group>
+    </pui-form>
     <div class="block-container m-2">
       <div class="block laptop-up-4">
         <h2 class="mt-6">Icons</h2>
@@ -349,7 +507,6 @@
         </pui-image-round>
       </div>
     </div>
-
   </div>
   <div class="p-5">
     <pui-table :headers="['Dog', 'Cat', 'Human']">
@@ -488,6 +645,14 @@ export default {
     toggleRightDrawer() {
       this.drawerRightOpen = !this.drawerRightOpen;
     },
+    toggleReadOnly(e) {
+      e.preventDefault();
+      document.querySelector('.readonly-input label input').removeAttribute('readonly');
+    },
+    toggleReadOnlyText(e) {
+      e.preventDefault();
+      document.querySelector('.readonly-text label textarea').removeAttribute('readonly');
+    }
   },
 };
 </script>
