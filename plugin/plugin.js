@@ -13,6 +13,7 @@ import DrawerHeader from './components/DrawerHeader.vue';
 import DrawerContent from './components/DrawerContent.vue';
 import Button from './components/Button.vue';
 import FigureHover from './components/FigureHover.vue';
+import Icon from './components/Icon.vue';
 import ImageRound from './components/ImageRound.vue';
 import Menu from './components/Menu.vue';
 import MenuDropdown from './components/MenuDropdown.vue';
@@ -40,6 +41,7 @@ export default {
     app.component('pui-drawer-header', DrawerHeader);
     app.component('pui-drawer-content', DrawerContent);
     app.component('pui-figure-hover', FigureHover);
+    app.component('pui-icon', Icon);
     app.component('pui-image-round', ImageRound);
     app.component('pui-menu', Menu);
     app.component('pui-menu-dropdown', MenuDropdown);
