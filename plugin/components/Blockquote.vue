@@ -1,6 +1,7 @@
 <script>
 export default {
   name: 'pui-blockquote',
+  inheritAttrs: false,
   props: {
     author: {
       type: String

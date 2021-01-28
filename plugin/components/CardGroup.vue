@@ -2,7 +2,7 @@
 import useCaptureAttributes from '../composables/useCaptureAttributes';
 
 export default {
-  name: 'card-group',
+  name: 'pui-card-group',
   inheritAttrs: false,
   render() {
     const { classes, rest } = useCaptureAttributes(this, 'card__group');

@@ -2,10 +2,10 @@
 import useCaptureAttributes from '../composables/useCaptureAttributes';
 
 export default {
-  name: 'drawer-content',
+  name: 'pui-drawer-content',
   inheritAttrs: false,
   render() {
-    let { classes, rest } = useCaptureAttributes(this, 'drawer__content');
+    const { classes, rest } = useCaptureAttributes(this, 'drawer__content');
 
     return (
       <div className={classes} {...rest}>

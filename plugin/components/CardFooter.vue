@@ -2,7 +2,7 @@
 import useCaptureAttributes from '../composables/useCaptureAttributes';
 
 export default {
-  name: 'card-footer',
+  name: 'pui-card-footer',
   inheritAttrs: false,
   render() {
     const { classes, rest } = useCaptureAttributes(this, 'card__footer');

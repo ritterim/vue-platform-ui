@@ -1,6 +1,7 @@
 <script>
 export default {
   name: 'pui-button',
+  inheritAttrs: false,
   render() {
     const buttonClasses = 'button'.concat(this.buttonSize || '');
     return (
