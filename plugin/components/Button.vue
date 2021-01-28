@@ -12,7 +12,7 @@ export default {
     size: {
       type: String,
       validator: function (value) {
-        return ['large'].indexOf(value) !== -1;
+        return ['lg'].indexOf(value) !== -1;
       },
     },
   },
@@ -21,7 +21,7 @@ export default {
       let className = null;
       if (this.size) {
         switch (this.size) {
-          case 'large':
+          case 'lg':
             className = 'button--lg';
             break;
           default:
