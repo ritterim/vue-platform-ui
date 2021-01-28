@@ -1,21 +1,9 @@
-<template>
-  <table class="table" :class="[{'table--no-hover': hoverOff}, {unresponsive: unresponsive}]">
-    <thead>
-      <tr>
-        <th v-for="header in headers" :v-id="header" :key="header">
-          {{ header }}
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <slot></slot>
-    </tbody>
-  </table>
-</template>
-
 <script>
+import useCaptureAttributes from '../composables/useCaptureAttributes';
+
 export default {
   name: 'pui-table',
+  inheritAttrs: false,
   props: {
     unresponsive: {
       type: Boolean
@@ -27,6 +15,26 @@ export default {
       type: Array,
       required: true
     }
+  },
+  render() {
+    let { classes, rest } = useCaptureAttributes(this, 'table');
+    if(this.hoverOff) classes += ` table--no-hover`;
+    if(this.unresponsive) classes += ` unresponsive`;
+
+    return (
+      <table className={classes} {...rest}>
+        <thead>
+          <tr>
+            {
+              this.headers.map(header => (<th>{header}</th>))
+            }
+          </tr>
+        </thead>
+        <tbody>
+          {this.$slots.default()}
+        </tbody>
+      </table>
+    )
   }
 };
 </script>

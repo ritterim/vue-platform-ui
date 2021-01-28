@@ -3,7 +3,7 @@ import useCaptureAttributes from '../composables/useCaptureAttributes';
 
 // The Platform UI Accordion is a component that expands when the header is clicked to reveal more content.
 export default {
-  name: 'accordion',
+  name: 'pui-accordion',
   props: {
     // Prop to determine if the accordion is active or not
     active: {

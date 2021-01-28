@@ -1,18 +1,9 @@
-<template>
-  <div
-    class="drawer"
-    :class="[{ 'drawer--closed': !open }, drawerDirection, drawerSize]"
-    :aria-hidden="!open"
-  >
-    <div class="drawer__inner">
-      <slot></slot>
-    </div>
-  </div>
-</template>
-
 <script>
+import useCaptureAttributes from '../composables/useCaptureAttributes';
+
 export default {
-  name: 'drawer',
+  name: 'pui-drawer',
+  inheritAttrs: false,
   props: {
     // Sets whether the drawer is open or not
     open: {
@@ -67,5 +58,19 @@ export default {
       return className;
     },
   },
+  render() {
+    let { classes, rest } = useCaptureAttributes(this, 'drawer');
+    if(!this.open) classes += ' drawer--closed';
+    if(this.drawerDirection) classes += ` ${this.drawerDirection}`;
+    if(this.drawerSize) classes += ` ${this.drawerSize}`;
+
+    return (
+      <div className={classes} aria-hidden={!this.open} {...rest}>
+        <div class="drawer__inner">
+          {this.$slots.default()}
+        </div>
+      </div>
+    )
+  }
 };
 </script>

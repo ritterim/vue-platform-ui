@@ -1,11 +1,15 @@
-<template>
-  <div class="card__header">
-    <slot></slot>
-  </div>
-</template>
-
 <script>
+import useCaptureAttributes from '../composables/useCaptureAttributes';
 export default {
-  name: 'card-header',
+  name: 'pui-card-header',
+  inheritAttrs: false,
+  render() {
+    const { classes, rest } = useCaptureAttributes(this, 'card__header');
+    return (
+      <div className={classes} {...rest}>
+        {this.$slots.default()}
+      </div>
+    );
+  }
 };
 </script>
