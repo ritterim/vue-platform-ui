@@ -17,9 +17,6 @@ if "%APPVEYOR%" equ "True" (
 
 if %ERRORLEVEL% neq 0 goto BuildFail
 
-call npm run test:unit
-if %ERRORLEVEL% neq 0 goto BuildFail
-
 goto BuildSuccess
 
 :BuildFail
