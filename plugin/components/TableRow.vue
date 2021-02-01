@@ -1,11 +1,10 @@
-<template>
-  <tr>
-    <slot></slot>
-  </tr>
-</template>
-
 <script>
 export default {
-  name: 'pui-table-row'
+  name: 'pui-table-row',
+  render() {
+    return (
+      <tr>{this.$slots.default()}</tr>
+    )
+  }
 };
 </script>

@@ -1,11 +1,17 @@
-<template>
-  <div class="card__footer">
-    <slot></slot>
-  </div>
-</template>
-
 <script>
+import useCaptureAttributes from '../composables/useCaptureAttributes';
+
 export default {
-  name: 'card-footer',
+  name: 'pui-card-footer',
+  inheritAttrs: false,
+  render() {
+    const { classes, rest } = useCaptureAttributes(this, 'card__footer');
+
+    return (
+      <div className={classes} {...rest}>
+        {this.$slots.default()}
+      </div>
+    )
+  }
 };
 </script>

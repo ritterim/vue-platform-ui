@@ -1,19 +1,26 @@
 {
-  "name": "pui-vue-components",
+  "name": "@ritterim/vue-platform-ui",
   "version": "0.1.0",
   "private": true,
+  "main": "dist/pui.common.js",
+  "browser": "dist/pui.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:lib": "vue-cli-service build --target lib --name pui ./plugin/plugin.js",
     "lint": "vue-cli-service lint",
     "build:docs": "vuese gen",
     "serve docs": "vuese serve --open"
   },
   "dependencies": {
-    "@ritterim/platform-ui": "^1.2.5",
-    "@vuese/cli": "^2.14.3",
-    "console": "^0.7.2",
     "core-js": "^3.6.5",
+    "vue": "^3.0.5"
+  },
+  "devDependencies": {
+    "@ritterim/platform-ui": "^1.2.5",
+    "console": "^0.7.2",
+    "@vuese/cli": "^2.14.3",
+    "@vue/babel-plugin-jsx": "^1.0.2",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-clean": "^0.4.0",
@@ -31,9 +38,6 @@
     "npm-css": "^0.2.3",
     "readline": "^1.3.0",
     "sass": "^1.32.5",
-    "vue": "^3.0.0-beta.1"
-  },
-  "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",

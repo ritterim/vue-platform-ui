@@ -1,18 +1,9 @@
-<template>
-  <header class="site-menu-wrapper">
-    <button class="site-menu-mobile-action" @click.prevent="toggleMobileMenu">
-      <span class="sr-only">Toggle Navigation</span>
-      <i aria-hidden="true" focusable="false" class="pi-menu pi-xl"></i>
-    </button>
-    <nav class="site-menu" :class="[menuClasses, addStyle, {active: mobileOpen}]">
-      <slot></slot>
-    </nav>
-  </header>
-</template>
-
 <script>
+import useCaptureAttributes from '../composables/useCaptureAttributes';
+
 export default {
   name: 'pui-menu',
+  inheritAttrs: false,
   props: {
     menuClasses: {
       type: String
@@ -50,9 +41,29 @@ export default {
     };
   },
   methods: {
-    toggleMobileMenu() {
+    toggleMobileMenu(evt) {
+      evt.preventDefault();
       this.mobileOpen = !this.mobileOpen
     }
+  },
+  render() {
+    const { classes, rest } = useCaptureAttributes(this, 'site-menu-wrapper');
+    let navClasses = 'site-menu';
+    if(this.menuClasses) navClasses += ` ${this.menuClasses}`;
+    if(this.addStyle) navClasses += ` ${this.addStyle}`;
+    if(this.mobileOpen) navClasses += ` active`;
+
+    return (
+      <header className={classes} {...rest}>
+        <button class="site-menu-mobile-action" onClick={this.toggleMobileMenu}>
+          <span class="sr-only">Toggle Navigation</span>
+          <i aria-hidden="true" focusable="false" class="pi-menu pi-xl"></i>
+        </button>
+        <nav className={navClasses}>
+          {this.$slots.default()}
+        </nav>
+      </header>
+    )
   }
 };
 </script>

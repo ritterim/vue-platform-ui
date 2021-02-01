@@ -1,11 +1,17 @@
-<template>
-  <div class="drawer__header">
-    <slot></slot>
-  </div>
-</template>
-
 <script>
+import useCaptureAttributes from '../composables/useCaptureAttributes';
+
 export default {
-  name: 'drawer-header',
+  name: 'pui-drawer-header',
+  inheritAttrs: false,
+  render() {
+    const { classes, rest } = useCaptureAttributes(this, 'drawer__header');
+
+    return (
+      <div className={classes} {...rest}>
+        {this.$slots.default()}
+      </div>
+    )
+  }
 };
 </script>
