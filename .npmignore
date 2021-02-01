@@ -1,0 +1,6 @@
+./plugin
+./public
+./src
+./.appveyor.yml
+./babel.config.js
+./build.cmd

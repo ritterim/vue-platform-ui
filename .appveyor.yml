@@ -24,7 +24,7 @@ deploy_script:
       {
         "@ritterim:registry=https://ritterim.myget.org/F/npm/npm/`r`n//ritterim.myget.org/F/npm/npm/:_authToken=`$`{MYGET_TOKEN`}" | Out-File (Join-Path $ENV:APPVEYOR_BUILD_FOLDER ".npmrc") -Encoding UTF8
         iex "npm pack"
-        iex "npm publish ./dist"
+        iex "npm publish"
       }
     on:
       branch: master
