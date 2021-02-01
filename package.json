@@ -1,7 +1,7 @@
 {
   "name": "@ritterim/vue-platform-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "dist/pui.common.js",
   "browser": "dist/pui.umd.js",
   "scripts": {
