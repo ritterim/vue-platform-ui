@@ -39,7 +39,7 @@
       <!-- Button -->
       <div class="block laptop-up-4 p-4">
         <h2>Button</h2>
-        <pui-button>This is a Button</pui-button>
+        <pui-button @click="buttonClick">This is a Button</pui-button>
         <pui-button size="lg">This is a Button</pui-button>
       </div>
     </div>
@@ -71,16 +71,18 @@
       <div class="block laptop-up-4 p-4">
         <h2>Drawer</h2>
         <div class="flex flex--align-center flex--justify-center flex--wrap">
-          <pui-button class="m-2" @click="toggleDrawer">Open Drawer</pui-button>
-          <pui-button class="m-2" @click="toggleSingleDrawer"
-            >Open Single Drawer</pui-button
-          >
-          <pui-button class="m-2" @click="toggleLeftDrawer"
-            >Open Left Drawer</pui-button
-          >
-          <pui-button class="m-2" @click="toggleRightDrawer"
-            >Open Right Drawer</pui-button
-          >
+          <pui-button class="m-2 background-blue" @click="toggleDrawer">
+            Open Drawer
+          </pui-button>
+          <pui-button class="m-2" @click="toggleSingleDrawer">
+            Open Single Drawer
+          </pui-button>
+          <pui-button class="m-2" @click="toggleLeftDrawer">
+            Open Left Drawer
+          </pui-button>
+          <pui-button class="m-2" @click="toggleRightDrawer">
+            Open Right Drawer
+          </pui-button>
         </div>
       </div>
 
@@ -95,7 +97,6 @@
     </div>
 
     <div class="block-container">
-
       <!-- Info Box -->
       <div class="block laptop-up-4 p-4">
         <h2>Info Box</h2>

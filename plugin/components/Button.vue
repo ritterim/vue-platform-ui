@@ -1,13 +1,12 @@
 <script>
 export default {
   name: 'pui-button',
-  inheritAttrs: false,
   render() {
-    const buttonClasses = 'button'.concat(this.buttonSize || '');
+    const buttonClasses = 'button'.concat(' ', this.buttonSize || '');
     return (
-      <div className={buttonClasses}>
+      <button class={buttonClasses}>
         {this.$slots.default()}
-      </div>
+      </button>
     );
   },
   props: {
