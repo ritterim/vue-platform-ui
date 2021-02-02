@@ -71,7 +71,7 @@
       <div class="block laptop-up-4 p-4">
         <h2>Drawer</h2>
         <div class="flex flex--align-center flex--justify-center flex--wrap">
-          <pui-button class="m-2 background-blue" @click="toggleDrawer">
+          <pui-button class="m-2" @click="toggleDrawer">
             Open Drawer
           </pui-button>
           <pui-button class="m-2" @click="toggleSingleDrawer">
